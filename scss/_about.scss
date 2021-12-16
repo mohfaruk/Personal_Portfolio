@@ -1,0 +1,46 @@
+#about{
+    // About: Section A
+    &-a {
+        margin-left: 10rem;
+        
+        .about-info {
+            display: flex;
+        }
+
+        .bio, .skills {
+            grid-area: bio;
+            text-align: left;
+            border-left: 5px solid $main-color;
+            padding: 1.5rem 2.5rem;
+            float: left;
+            line-height: 2rem;
+            width: 50%;
+        }
+
+        h2 {
+            text-align: left;
+            margin-bottom: 1.2rem;
+        }
+
+        ul {
+            margin-left: 1.2rem;
+        }
+    }
+
+    //About: Section C
+    &-c {
+        .about-logos {
+            display: flex;
+            justify-content: center;
+
+            .javascript {
+                padding-top: 1.3rem;
+            }
+
+            img {
+                width: 15%;
+                height: 15%;
+            }
+        }
+    }
+}

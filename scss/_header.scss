@@ -1,0 +1,101 @@
+// Header
+#header {
+    // Header Home
+    &-bg {
+        background: $bg-image no-repeat center/cover;
+        position: relative;
+        height: 100vh;
+        color: #fff;
+
+        // Header Content
+        .header-content {
+            text-align: center;
+            padding-top: 5%;
+
+            h1 {
+                font-size: 4rem;
+                letter-spacing: 3px;
+                line-height: 1.2;
+                text-transform: uppercase;
+                position: relative;
+                animation: text 3s 1;
+                text-shadow: $header-shadow; color:$main-color;
+            }
+
+
+            h2 {
+                font-size: 3rem;
+                letter-spacing: 3px;
+                margin-bottom: 1.2rem;
+                text-transform: uppercase;
+                position: relative;
+                animation: text 3s 1;
+                text-shadow: $header-shadow;
+            }
+
+
+            @keyframes text {
+                0% {
+                    color: black;
+                    //margin-bottom: -40px;
+                }
+
+                30% {
+                    letter-spacing: 25px;
+                    //margin-bottom: -40px;
+                }
+
+                85% {
+                    letter-spacing: 3px;
+                    //margin-bottom: -40px;
+                }
+            }
+
+            a {
+                margin: 1.2rem;
+            }
+        }
+        .content {
+            display: flex;
+            flex-flow: column ;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .header-buttons {
+            display: inline;
+        }
+    }
+
+    &-bg::before {
+        content: '';
+        position: absolute;
+        // top: 0;
+        // left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+    &-bg * {
+     z-index: 1;
+    }
+}
+
+// NavBar
+#main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1rem;
+
+    a {
+        margin: 10px;
+
+        .fab {
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+    }
+}

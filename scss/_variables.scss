@@ -1,0 +1,19 @@
+// Variables
+$website-width: 1280px;
+$main-color: #ffd300;
+$secondary-color: #f1d750;
+$light-color: #f4f4f4;
+$medium-color: #ccc;
+$dark-color: #333;
+$bg-image: url("../img/showcase.jpg");
+$header-shadow: 0 0 3px $main-color, 0 0 7px $secondary-color, 0 0 20px $main-color;
+$image-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+
+// Text Color
+@function set-text-color($color) {
+    @if(lightness($color) > 50) {
+        @return #000;
+    } @else {
+        @return #fff;
+    }
+}

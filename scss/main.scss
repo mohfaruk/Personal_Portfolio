@@ -1,0 +1,14 @@
+//Import variables and utilities
+@import 'variables';
+@import 'utilities';
+
+//Import sections
+@import 'header';
+@import 'about';
+@import 'header';
+@import 'projects';
+@import 'contact';
+@import 'footer';
+
+// Import media queries
+@import 'media';

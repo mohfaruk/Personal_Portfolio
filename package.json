@@ -1,0 +1,17 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "Portfolio Website",
+  "main": "app.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "Mohamad Faruk",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "node-sass": "^4.11.0",
+    "node-sass-install": "^1.0.2"
+  }
+}
