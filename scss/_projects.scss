@@ -1,33 +1,18 @@
 .items {
     display: block;
-    width: 35%;
-    height: 35%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
 }
 
 .item {
     position: relative;
-    background: $main-color;
-    box-shadow: $image-shadow;
-    overflow: hidden;
     margin-bottom: 2.5rem;
+    display: flex;
 
-    &::after {
-        content: '';
-        position: absolute;
-        display: block;
-        background: inherit;
-        opacity: 0.9;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
-        transition: transform 2s cubic-bezier(0.2, 1, 0.3, 1);
-    }
-
-    //Bring in main color overlay
-    &:hover:after {
-        transform: scale(2) translateX(0) translateY(-60%) rotate(-30deg);
+    &-image {
+        padding: 1.5rem 2.5rem;
+        transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
     }
 
     //Scale image when hovered
@@ -35,71 +20,22 @@
         transform: scale(1.2);
     }
 
-    // Bring in text on hover
-    &:hover &-text {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    &-image {
-        height: auto;
-        transform: translateZ(0);
-        display: block;
-        transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
-    }
-    &-image:before {
-        content: '';
-        display: block;
-        padding-top: 75%;
-        overflow: hidden;
-    }
-
-    &-image img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        line-height: 0;
-    }
-
-    &-text {
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        opacity: 0;
-        text-align: center;
-        z-index: 1;
-        color: #fff;
-        transform: translateY(-20%);
-        transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1), transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
-        transition-delay: 300ms;
-    }
-
-    &-text-wrap {
-        width: 100%;
-        position: absolute;
-        top: 20%;
-        right: 20%;
-        transform: translateY(-50%);
-    }
-
-    &-text-title {
-        font-size: 1.8rem;
-        padding: 0 1rem;
-        margin: 5px 0 0 0;
-    }
-
-    &-text-category {
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        opacity: 0.7;
-        margin: 0;
-    }
-
     &-description {
-        text-align: right;
+        text-align: left;
+        padding: 1.5rem 2.5rem;
+        float: left;
+        line-height: 2rem;
+
+        h2 {
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    &-buttons {
+        margin-top: 2rem;
+
+        button {
+            margin-right: 15px;
+        }
     }
 }

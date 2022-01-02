@@ -1,0 +1,26 @@
+Navbar - 
+[x] Make sure there is a background overlay so it is easier to see
+
+Header Image - 
+[x] Add overlay to darken background
+[x] Make h1 tags appear on display
+[x] Make contact button a mail icon
+
+About - 
+[x] Center section so About Me is more focused for the viewer
+[x] Resize tech logos so they are even
+
+Projects - 
+[] Add premier catering image for project 1
+[x] Add text for both projects
+[] Add buttons to view code and to view live
+
+Footer - 
+[] Add arrow up button to scroll to top
+
+Other - 
+[] Refactor code so there is no duplication (e.g. border-radius, a tags, i tags, keyframes)
+    As Above, make sure there is a variable for yellow left border. This can be seen in
+    about section and projects.
+[] Media Queries - Especially for projects section
+[x] Create new scss files for individual sections (header, about, projects, contact)
