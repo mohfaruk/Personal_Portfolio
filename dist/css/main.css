@@ -49,6 +49,11 @@ i {
   background: #ffd300;
 }
 
+#tagline h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -305,9 +310,7 @@ input[class^=btn-]:hover {
 #about-a .bio, #about-a .skills {
   grid-area: bio;
   text-align: left;
-  border-left: 5px solid #ffd300;
   padding: 1.5rem 2.5rem;
-  float: left;
   line-height: 2rem;
   width: 50%;
 }
@@ -541,11 +544,6 @@ input[class^=btn-]:hover {
   width: 15%;
 }
 
-#contact-c h1 {
-  text-align: center;
-  font-size: 3rem;
-}
-
 .scroll-button {
   margin-bottom: 1.5rem;
 }
@@ -569,42 +567,26 @@ input[class^=btn-]:hover {
   align-items: center;
 }
 
-@media (max-width: 800px) {
-  #header-home {
-    height: 30rem;
-  }
-
+@media (max-width: 1024px) {
   #header-home .header-content {
     padding-top: 5rem;
   }
-}
-@media (max-width: 783px) {
+
   #main-nav {
-    -webkit-box-orient: vertical;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   #main-nav li {
     padding: 1rem;
-  }
-
-  #header-home {
-    height: 20rem;
-    border-bottom: 3px solid #ffd300;
-    background-position: 20% 30%;
-  }
-
-  #header-home .header-content {
-    display: none;
-  }
-
-  #header-inner {
-    height: 20rem;
   }
 
   #home-a .specials,
@@ -615,6 +597,10 @@ input[class^=btn-]:hover {
 .items {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+  }
+
+  #tagline h1 {
+    font-size: 2rem;
   }
 
   #home-a .specials div {
@@ -631,32 +617,8 @@ input[class^=btn-]:hover {
     padding: 2rem 0 1rem 0;
   }
 
-  #about-a .about-info {
-    grid-template-areas: "bio-image" "bio" "aw1" "aw2" "aw3";
-  }
-
-  #about-a .bio-image {
-    width: 70%;
-  }
-
-  #about-c {
-    display: none;
-  }
-
   #contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message";
-  }
-
-  #contact-b div {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px #555 solid;
-  }
-
-  #contact-b div:last-child {
-    border: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
   }
 
   #main-footer {
@@ -670,11 +632,6 @@ input[class^=btn-]:hover {
     flex-direction: column;
     padding: 1rem;
     height: 5rem;
-  }
-}
-@media (max-height: 400px) {
-  #header-home .header-content {
-    padding-top: 5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

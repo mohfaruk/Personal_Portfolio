@@ -50,6 +50,13 @@ i {
     }
 }
 
+#tagline {
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
 // Buttons
 %btn-shared {
     display: inline-block;
@@ -191,3 +198,4 @@ input[class^='btn-']:hover {
     display: block;
     margin: 0 auto 1rem auto;
 }
+
