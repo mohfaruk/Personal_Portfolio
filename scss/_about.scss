@@ -1,14 +1,11 @@
 #about{
     // About: Section A
     &-a {
-        //margin-left: 10rem;
-        
         .about-info {
             display: flex;
         }
 
         .bio, .skills {
-            // grid-area: bio;
             text-align: left;
             padding: 1.5rem 2.5rem;
             line-height: 2rem;
