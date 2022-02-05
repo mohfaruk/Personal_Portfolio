@@ -1,9 +1,12 @@
 @media(max-width: 1024px) {
     #header-home {
-        //height: 30rem;
 
         .header-content {
             padding-top: 5rem;
+
+            h1 {
+                font-size: 2.5rem;
+            }
         }
     }
 
@@ -53,11 +56,35 @@
         }
     }
 
+    #about {
+        &-a {
+            .about-info {
+                display: block;
+            }
+            .bio, .skills {
+                width: 70%;
+            }
+        }
+    }
+
+    //Projects
+    .item {
+        display: block;
+
+        &:hover &-image {
+            transform: none;
+        }
+    }
+
     // Contact
     #contact {
         &-a {
             .text-fields {
                 grid-template-areas: 'name''subject''email''phone''message';
+            }
+
+            button[type='submit'] {
+                width: 30%;
             }
         }
     }

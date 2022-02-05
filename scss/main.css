@@ -310,7 +310,6 @@ input[class^='btn-']:hover {
 }
 
 #about-a .bio, #about-a .skills {
-  grid-area: bio;
   text-align: left;
   padding: 1.5rem 2.5rem;
   line-height: 2rem;
@@ -496,7 +495,7 @@ input[class^='btn-']:hover {
 }
 
 .item-buttons button {
-  margin-right: 15px;
+  margin: 25px 15px 0 0;
 }
 
 #contact-a .text-fields {
@@ -574,6 +573,9 @@ input[class^='btn-']:hover {
   #header-home .header-content {
     padding-top: 5rem;
   }
+  #header-home .header-content h1 {
+    font-size: 2.5rem;
+  }
   #main-nav {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -612,8 +614,24 @@ input[class^='btn-']:hover {
   #home-b .stats div {
     padding: 2rem 0 1rem 0;
   }
+  #about-a .about-info {
+    display: block;
+  }
+  #about-a .bio, #about-a .skills {
+    width: 70%;
+  }
+  .item {
+    display: block;
+  }
+  .item:hover .item-image {
+    -webkit-transform: none;
+            transform: none;
+  }
   #contact-a .text-fields {
         grid-template-areas: "name" "subject" "email" "phone" "message";
+  }
+  #contact-a button[type='submit'] {
+    width: 30%;
   }
   #main-footer {
     height: 7rem;
