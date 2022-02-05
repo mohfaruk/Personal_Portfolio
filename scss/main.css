@@ -299,10 +299,6 @@ input[class^='btn-']:hover {
   width: 2.5rem;
 }
 
-#about-a {
-  margin-left: 10rem;
-}
-
 #about-a .about-info {
   display: -webkit-box;
   display: -ms-flexbox;
