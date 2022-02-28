@@ -24,10 +24,6 @@ img {
     width: 100%;
 }
 
-i {
-    color: #fff;
-}
-
 .container {
     max-width: $website-width;
     padding: 0 1.5rem;
@@ -94,7 +90,6 @@ input[class^='btn-']:hover {
 }
 
 .scroll {
-
     &-top {
         float: right;
         margin-right: 2.5rem;

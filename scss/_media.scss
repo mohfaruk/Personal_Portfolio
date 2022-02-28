@@ -56,16 +56,22 @@
         }
     }
 
-    #about {
-        &-a {
-            .about-info {
-                display: block;
+    #about-section {
+        .about-info {
+            display: block;
+        }
+
+    }
+
+    #skills-logos {
+        .about-logos {
+            margin: 20px;
+
+            i {
+                transform: scale(0.8);
+                margin: 15px;
             }
 
-            .bio, .skills {
-                //margin-right: 10rem;
-                width: 70%;
-            }
         }
     }
 

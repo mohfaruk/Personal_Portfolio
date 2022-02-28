@@ -1,41 +1,44 @@
-#about{
-    // About: Section A
-    &-a {
-        .about-info {
-            display: flex;
-        }
-
-        .bio, .skills {
-            text-align: left;
-            padding: 1.5rem 2.5rem;
-            line-height: 2rem;
-            width: 50%;
-        }
-
-        h2 {
-            text-align: left;
-            margin-bottom: 1.2rem;
-        }
-
-        ul {
-            margin-left: 1.2rem;
-        }
+#about-section {
+    .about-info {
+        display: flex;
+        justify-content: center;
     }
 
-    //About: Section C
-    &-c {
-        .about-logos {
-            display: flex;
-            justify-content: center;
+    h2 {
+        margin-bottom: 1.2rem;
+    }
 
-            .javascript {
-                padding-top: 1.3rem;
-            }
+    .bio {
+        padding: 1.5rem 2.5rem;
+        line-height: 2rem;
+        font-size: 1.2rem;
 
-            img {
-                width: 15%;
-                height: 15%;
+        p {
+            text-align: left;
+        }
+    }
+}
+
+#skills-logos {
+
+    .about-logos {
+        display: flex;
+        justify-content: center;
+
+        i {
+            margin: 45px;
+
+            span {
+                display: block;
+                font-family: 'Dosis', sans-serif;
+                text-align: center;
+                font-size: 1.2rem;
             }
+        }
+
+        i:hover {
+            background: none;
+            transform: scale(1.1);
         }
     }
 }
