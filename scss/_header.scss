@@ -2,7 +2,7 @@
 #header {
     &-bg {
         background: $main-color no-repeat center/cover;
-        position: relative;
+        //position: relative;
         height: 100vh;
     }
 
@@ -11,7 +11,7 @@
         &-content {
             text-align: center;
             padding: 200px;
-            font-family: 'Original Surfer', cursive;;
+            font-family: 'Original Surfer', cursive;
 
             h1 {
                 font-size: 5rem;
@@ -19,7 +19,6 @@
                 line-height: 1.2;
                 text-transform: uppercase;
             }
-
 
             h2 {
                 font-size: 3.5rem;
@@ -85,8 +84,4 @@
             transition: .3s;
         }
     }
-
-
-
-
 }

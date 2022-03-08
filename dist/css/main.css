@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Dosis", sans-serif;
   line-height: 1.6;
@@ -152,7 +156,6 @@ input[class^=btn-]:hover {
 
 #header-bg {
   background: #fdad5c no-repeat center/cover;
-  position: relative;
   height: 100vh;
 }
 
@@ -278,7 +281,6 @@ input[class^=btn-]:hover {
 
 #header-bg {
   background: #fdad5c no-repeat center/cover;
-  position: relative;
   height: 100vh;
 }
 
@@ -358,12 +360,10 @@ input[class^=btn-]:hover {
   display: grid;
   -ms-grid-columns: 600px 600px;
   grid-template-columns: 600px 600px;
-  grid-gap: 10rem;
+  grid-gap: 5rem;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
   margin: auto;
 }
 
@@ -474,31 +474,6 @@ input[class^=btn-]:hover {
 }
 
 @media (max-width: 1024px) {
-  #header-home .header-content {
-    padding-top: 5rem;
-  }
-
-  #header-home .header-content h1 {
-    font-size: 2.5rem;
-  }
-
-  #main-nav {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-
-  #main-nav li {
-    padding: 1rem;
-  }
-
   #home-a .specials,
 #home-b .stats,
 #home-c .process,
