@@ -1,3 +1,7 @@
+//Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
 //General Styles
 * {
     margin: 0;
@@ -31,20 +35,7 @@ img {
     overflow: hidden;
 }
 
-.fab {
-    margin-right: 1rem;
-    border: 2px #fff solid;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    line-height: 20px;
-    text-align: center;
-    padding: 0.5rem;
 
-    &:hover {
-        background: $main-color;
-    }
-}
 
 #tagline {
     h1 {
@@ -70,12 +61,6 @@ img {
         background-color: $main-color;
     }
 
-    &-light {
-        @extend %btn-shared;
-        color: #333;
-        background-color: $light-color;
-    }
-
     &-dark {
         @extend %btn-shared;
         color: #f4f4f4;
@@ -86,7 +71,16 @@ img {
 button[class^='btn-']:hover,
 a[class^='btn-']:hover,
 input[class^='btn-']:hover {
-    background-color: $main-color;
+    background-color: $medium-color;
+}
+
+//Icons
+.fab {
+    margin: 0 0.5rem;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    padding: 0.5rem;
 }
 
 .scroll {
@@ -111,23 +105,28 @@ input[class^='btn-']:hover {
 .bg {
     &-main {
         background: $main-color;
-        color: set-text-color($main-color);
+        color: #fff;
     }
 
-    &-dark {
-        background: $dark-color;
-        color: set-text-color($dark-color);
-    }
+    // &-secondary {
+    //     background: $secondary-color;
+    //     color: set-text-color($secondary-color);
+    // }
 
-    &-light {
-        background: $light-color;
-        color: set-text-color($light-color);
-    }
+    // &-dark {
+    //     background: $dark-color;
+    //     color: set-text-color($dark-color);
+    // }
 
-    &-medium {
-        background: $medium-color;
-        color: set-text-color($medium-color);
-    }
+    // &-light {
+    //     background: $light-color;
+    //     color: set-text-color($light-color);
+    // }
+
+    // &-medium {
+    //     background: $medium-color;
+    //     color: set-text-color($medium-color);
+    // }
 }
 
 .lead {

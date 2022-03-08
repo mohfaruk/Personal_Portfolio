@@ -39,7 +39,6 @@
     #home {
         &-a {
             .specials div {
-                border-bottom: 1px $light-color solid;
                 padding-bottom: 1rem;
 
                 &:last-child {
@@ -63,25 +62,17 @@
 
     }
 
-    #skills-logos {
-        .about-logos {
-            margin: 20px;
-
-            i {
-                transform: scale(0.8);
-                margin: 15px;
-            }
+    #skills-section {
+        .skills-logos {
+            display: grid;
+            grid-template-columns: 140px 140px 140px;
 
         }
     }
 
     //Projects
-    .item {
-        display: block;
-
-        &:hover &-image {
-            transform: none;
-        }
+    .projects {
+        grid-template-columns: 500px;
     }
 
     // Contact
