@@ -211,14 +211,19 @@ input[class^=btn-]:hover {
   line-height: 1.2;
 }
 .header-content h2 {
-  background-color: #008080;
+  color: #008080;
   font-size: 3.5rem;
   letter-spacing: 3px;
   margin-bottom: 1.2rem;
 }
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
 .header-buttons i {
   color: #000;
-  margin: 1.5rem;
 }
 .header-buttons i:hover {
   color: #008080;
@@ -325,14 +330,19 @@ input[class^=btn-]:hover {
   line-height: 1.2;
 }
 .header-content h2 {
-  background-color: #008080;
+  color: #008080;
   font-size: 3.5rem;
   letter-spacing: 3px;
   margin-bottom: 1.2rem;
 }
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+}
 .header-buttons i {
   color: #000;
-  margin: 1.5rem;
 }
 .header-buttons i:hover {
   color: #008080;
@@ -457,10 +467,10 @@ input[class^=btn-]:hover {
     align-items: center;
   }
   .header-content h1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .header-content h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @media (max-width: 1024px) {

@@ -18,14 +18,6 @@
         font-weight: bold;
     }
 
-    // .navbar {
-    //     min-height: 70px;
-    //     display: flex;
-    //     justify-content: space-between;
-    //     align-items: center;
-    //     padding: 0 24px;
-    // }
-
     .nav-menu {
         display: flex;
         justify-content: space-between;
@@ -68,7 +60,6 @@
         background: $main-color;
         height: 100vh;
     }
-
     // Header Content
     &-content {
         display: flex;
@@ -85,18 +76,33 @@
         }
 
         h2 {
-            background-color: $secondary-color;
+            color: $secondary-color;
             font-size: 3.5rem;
             letter-spacing: 3px;
             margin-bottom: 1.2rem;
         }
+
+        //Use below for arrow
+
+        // span {
+        //     animation: blinker 1s linear infinite;
+        // }
+
+        // @keyframes blinker{
+        //     50%{
+        //         opacity: 50%
+        //     }
+        // }
     }
 
     &-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
 
         i {
             color: #000;
-            margin: 1.5rem;
 
             &:hover {
                 color: $secondary-color;
