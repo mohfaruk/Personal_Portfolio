@@ -1,316 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="./dist/css/main.css" />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="./dist/css/main.css" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-    />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
 
-    <title>Mohamad Faruk | Web Developer</title>
-  </head>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
 
-  <body>
-    <!-- Header -->
-    <section id="header">
-      <header id="header-bg">
-        <nav id="main-nav">
-          <a href="#" class="logo-title">MF</a>
-          <ul>
-            <li><a href="#about-section">About</a></li>
-            <li><a href="#projects-section">Projects</a></li>
-            <li><a href="#contact-a">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="header-content content">
-          <h1>Mohamad Faruk</h1>
-          <h2>Web Developer</h2>
-          <div class="header-buttons">
-            <a class="web-link" href="#contact-a"
-              ><i class="fab fa fa-envelope fa-3x"></i
-            ></a>
-            <a
-              class="web-link"
-              target="_blank"
-              href="https://github.com/mohfaruk"
-              ><i class="fab fa-brands fa-github fa-3x"></i
-            ></a>
-            <a
-              class="web-link"
-              target="_blank"
-              href="https://www.linkedin.com/in/mohamad-faruk-9b9523229/"
-              ><i class="fab fa-brands fa-linkedin fa-3x"></i
-            ></a>
-          </div>
+  <title>Mohamad Faruk | Web Developer</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section class="header">
+    <header class="header-bg">
+      <nav class="navbar">
+        <a href="#" class="logo-title">MF</a>
+        <ul class="nav-menu">
+          <li class="menu-item"><a href="#about-section">About</a></li>
+          <li class="menu-item"><a href="#projects-section">Projects</a></li>
+          <li class="menu-item"><a href="#contact-a">Contact</a></li>
+        </ul>
+
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-      </header>
-    </section>
+      </nav>
 
-    <!-- About Me -->
-    <section id="about-section" class="text-center py-3">
-      <div class="container">
-        <div class="about-info">
-          <div class="bio">
-            <h2 class="section-title">About Me</h2>
-            <div class="bottom-line"></div>
+
+      <div class="header-content content">
+        <h1>Mohamad Faruk</h1>
+        <h2 class="typewriter" data-wait="2000"
+          data-words="['Web Developer', 'Frontend Developer', 'Lifelong Learner', 'Book Enthusiast']">Web Developer</h2>
+        <div class="header-buttons">
+          <a class="web-link" href="#contact-a"><i class="fab fa fa-envelope fa-3x"></i></a>
+          <a class="web-link" target="_blank" href="https://github.com/mohfaruk"><i
+              class="fab fa-brands fa-github fa-3x"></i></a>
+          <a class="web-link" target="_blank" href="https://www.linkedin.com/in/mohamad-faruk-9b9523229/"><i
+              class="fab fa-brands fa-linkedin fa-3x"></i></a>
+        </div>
+        <div class="scroll-down">
+          <a href="#about-section"><i class="fa fa-angle-down fa-3x"></i></a>
+        </div>
+      </div>
+      </div>
+    </header>
+  </section>
+
+  <!-- About Me -->
+  <section id="about-section" class="text-center py-3">
+    <div class="container">
+      <div class="about-info">
+        <div class="bio">
+          <h2 class="section-title">About Me</h2>
+          <div class="bottom-line"></div>
+          <p>
+            I am a web developer specialising in front-end development and
+            UX/UI design. I love the process of creating innovative and
+            performant applications that add value to people’s lives. This
+            passion has propelled me to learn a vast range of technologies
+            with the aim of creating solutions to difficult problems.
+            <br />
+            <br />
+            My projects focus on the client side, which mainly comprise of
+            front-end technologies such as React. However, I am currently
+            spending my evenings learning back-end technologies such as
+            Node.JS, Express and MongoDB. My long term goal is to become an
+            effective full stack developer, able to efficiently turn great
+            ideas into working products.
+            <br />
+            <br />
+          </p>
+          <a href="./dist/img/items/Mohamad Faruk Web Dev CV.pdf" target="_blank" class="btn-dark">View CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills-section" class="py-4">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="bottom-line"></div>
+      <div class="skills-logos">
+        <i class="fab fa-brands fa-html5 fa-3x"><span>html</span></i>
+        <i class="fab fa-brands fa-css3 fa-3x"><span>css</span> </i>
+        <i class="fab fa-brands fa-js fa-3x"><span>javascript</span></i>
+        <i class="fab fa-brands fa-react fa-3x"><span>react</span></i>
+        <i class="fab fa-brands fa-sass fa-3x"><span>sass</span></i>
+        <i class="fab fa-brands fa-npm fa-3x"><span>npm</span></i>
+        <i class="fab fa-brands fa-github fa-3x"><span>git/github</span></i>
+        <i class="fab fa-brands fa-node fa-3x"><span>node.js</span></i>
+        <i class="fab fa-brands fa-envira fa-3x"><span>mongodb</span></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tagline -->
+  <section id="tagline" class="bg-main py-4">
+    <div class="container">
+      <h1>Check Out My Portfolio...</h1>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects-section" class="text-center py-3">
+    <div class="container">
+      <h2 class="section-title">My Work</h2>
+      <div class="bottom-line"></div>
+      <p class="lead">Check out my projects below</p>
+      <div class="projects">
+        <!-- Project 1 -->
+        <div class="item">
+          <div class="item-image">
+            <img src="./dist/img/items/item2.png" alt="" />
+          </div>
+          <div class="item-text"></div>
+          <div class="item-description">
+            <h2>React E-Commerce Project</h2>
             <p>
-              I am a web developer specialising in front-end development and
-              UX/UI design. I love the process of creating innovative and
-              performant applications that add value to people’s lives. This
-              passion has propelled me to learn a vast range of technologies
-              with the aim of creating solutions to difficult problems.
-              <br />
-              <br />
-              My projects focus on the client side, which mainly comprise of
-              front-end technologies such as React. However, I am currently
-              spending my evenings learning back-end technologies such as
-              Node.JS, Express and MongoDB. My long term goal is to become an
-              effective full stack developer, able to efficiently turn great
-              ideas into working products.
-              <br />
-              <br />
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              perferendis tempora iusto cupiditate repudiandae dolorum nobis
+              incidunt minima ad molestias earum in asperiores, pariatur non
+              totam laborum illo repellendus placeat deleniti quo! Alias
+              voluptate maxime odio quia obcaecati velit, illo repellat
+              dolorum neque vel voluptas possimus ullam commodi, amet earum?
+              Quas perferendis tempora iusto cupiditate repudiandae dolorum
+              nobis.
             </p>
-            <a
-              href="./dist/img/items/Mohamad Faruk Web Dev CV.pdf"
-              target="_blank"
-              class="btn-dark"
-              >View CV</a
-            >
+            <div class="item-buttons">
+              <button class="btn-dark">See Live</button>
+              <button class="btn-dark">View Code</button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section id="skills-section" class="py-4">
-      <div class="container">
-        <h2 class="section-title">Skills</h2>
-        <div class="bottom-line"></div>
-        <div class="skills-logos">
-          <i class="fab fa-brands fa-html5 fa-3x"><span>html</span></i>
-          <i class="fab fa-brands fa-css3 fa-3x"><span>css</span> </i>
-          <i class="fab fa-brands fa-js fa-3x"><span>javascript</span></i>
-          <i class="fab fa-brands fa-react fa-3x"><span>react</span></i>
-          <i class="fab fa-brands fa-sass fa-3x"><span>sass</span></i>
-          <i class="fab fa-brands fa-npm fa-3x"><span>npm</span></i>
-          <i class="fab fa-brands fa-github fa-3x"><span>git/github</span></i>
-          <i class="fab fa-brands fa-node fa-3x"><span>node.js</span></i>
-          <i class="fab fa-brands fa-envira fa-3x"><span>mongodb</span></i>
+
+        <!-- Project 2 -->
+        <div class="item">
+          <div class="item-image">
+            <img src="./dist/img/items/item2.png" alt="" />
+          </div>
+          <div class="item-text"></div>
+          <div class="item-description">
+            <h2>React API Project</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              perferendis tempora iusto cupiditate repudiandae dolorum nobis
+              incidunt minima ad molestias earum in asperiores, pariatur non
+              totam laborum illo repellendus placeat deleniti quo! Alias
+              voluptate maxime odio quia obcaecati velit, illo repellat
+              dolorum neque vel voluptas possimus ullam commodi, amet earum?
+              Quas perferendis tempora iusto cupiditate repudiandae dolorum
+              nobis.
+            </p>
+            <div class="item-buttons">
+              <button class="btn-dark">See Live</button>
+              <button class="btn-dark">View Code</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
 
-    <!-- Tagline -->
-    <section id="tagline" class="bg-main py-4">
-      <div class="container">
-        <h1>Check Out My Portfolio...</h1>
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects-section" class="text-center py-3">
-      <div class="container">
-        <h2 class="section-title">My Work</h2>
-        <div class="bottom-line"></div>
-        <p class="lead">Check out my projects below</p>
-        <div class="projects">
-          <!-- Project 1 -->
-          <div class="item">
-            <div class="item-image">
-              <img src="./dist/img/items/item2.png" alt="" />
-            </div>
-            <div class="item-text"></div>
-            <div class="item-description">
-              <h2>React E-Commerce Project</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                perferendis tempora iusto cupiditate repudiandae dolorum nobis
-                incidunt minima ad molestias earum in asperiores, pariatur non
-                totam laborum illo repellendus placeat deleniti quo! Alias
-                voluptate maxime odio quia obcaecati velit, illo repellat
-                dolorum neque vel voluptas possimus ullam commodi, amet earum?
-                Quas perferendis tempora iusto cupiditate repudiandae dolorum
-                nobis.
-              </p>
-              <div class="item-buttons">
-                <button class="btn-dark">See Live</button>
-                <button class="btn-dark">View Code</button>
-              </div>
+        <!-- Project 3 -->
+        <div class="item">
+          <div class="item-image">
+            <img src="./dist/img/items/item1.png" alt="" />
+          </div>
+          <div class="item-text"></div>
+          <div class="item-description">
+            <h2>Brochure Website</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              perferendis tempora iusto cupiditate repudiandae dolorum nobis
+              incidunt minima ad molestias earum in asperiores, pariatur non
+              totam laborum illo repellendus placeat deleniti quo! Alias
+              voluptate maxime odio quia obcaecati velit, illo repellat
+              dolorum neque vel voluptas possimus ullam commodi, amet earum?
+              Quas perferendis tempora iusto cupiditate repudiandae dolorum
+              nobis.
+            </p>
+            <div class="item-buttons">
+              <button class="btn-dark">See Live</button>
+              <button class="btn-dark">View Code</button>
             </div>
           </div>
+        </div>
 
-          <!-- Project 2 -->
-          <div class="item">
-            <div class="item-image">
-              <img src="./dist/img/items/item2.png" alt="" />
-            </div>
-            <div class="item-text"></div>
-            <div class="item-description">
-              <h2>React API Project</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                perferendis tempora iusto cupiditate repudiandae dolorum nobis
-                incidunt minima ad molestias earum in asperiores, pariatur non
-                totam laborum illo repellendus placeat deleniti quo! Alias
-                voluptate maxime odio quia obcaecati velit, illo repellat
-                dolorum neque vel voluptas possimus ullam commodi, amet earum?
-                Quas perferendis tempora iusto cupiditate repudiandae dolorum
-                nobis.
-              </p>
-              <div class="item-buttons">
-                <button class="btn-dark">See Live</button>
-                <button class="btn-dark">View Code</button>
-              </div>
-            </div>
+        <!-- Project 4 -->
+        <div class="item">
+          <div class="item-image">
+            <img src="./dist/img/items/item4.png" alt="" />
           </div>
-
-          <!-- Project 3 -->
-          <div class="item">
-            <div class="item-image">
-              <img src="./dist/img/items/item1.png" alt="" />
-            </div>
-            <div class="item-text"></div>
-            <div class="item-description">
-              <h2>Brochure Website</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                perferendis tempora iusto cupiditate repudiandae dolorum nobis
-                incidunt minima ad molestias earum in asperiores, pariatur non
-                totam laborum illo repellendus placeat deleniti quo! Alias
-                voluptate maxime odio quia obcaecati velit, illo repellat
-                dolorum neque vel voluptas possimus ullam commodi, amet earum?
-                Quas perferendis tempora iusto cupiditate repudiandae dolorum
-                nobis.
-              </p>
-              <div class="item-buttons">
-                <button class="btn-dark">See Live</button>
-                <button class="btn-dark">View Code</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 4 -->
-          <div class="item">
-            <div class="item-image">
-              <img src="./dist/img/items/item4.png" alt="" />
-            </div>
-            <div class="item-text"></div>
-            <div class="item-description">
-              <h2>Note Keeper Project</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-                perferendis tempora iusto cupiditate repudiandae dolorum nobis
-                incidunt minima ad molestias earum in asperiores, pariatur non
-                totam laborum illo repellendus placeat deleniti quo! Alias
-                voluptate maxime odio quia obcaecati velit, illo repellat
-                dolorum neque vel voluptas possimus ullam commodi, amet earum?
-                Quas perferendis tempora iusto cupiditate repudiandae dolorum
-                nobis.
-              </p>
-              <div class="item-buttons">
-                <button class="btn-dark">See Live</button>
-                <button class="btn-dark">View Code</button>
-              </div>
+          <div class="item-text"></div>
+          <div class="item-description">
+            <h2>Note Keeper Project</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
+              perferendis tempora iusto cupiditate repudiandae dolorum nobis
+              incidunt minima ad molestias earum in asperiores, pariatur non
+              totam laborum illo repellendus placeat deleniti quo! Alias
+              voluptate maxime odio quia obcaecati velit, illo repellat
+              dolorum neque vel voluptas possimus ullam commodi, amet earum?
+              Quas perferendis tempora iusto cupiditate repudiandae dolorum
+              nobis.
+            </p>
+            <div class="item-buttons">
+              <button class="btn-dark">See Live</button>
+              <button class="btn-dark">View Code</button>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- Tagline -->
-    <section id="tagline" class="bg-main py-4">
-      <div class="container">
-        <h1>Let's Start Your Next Project</h1>
-      </div>
-    </section>
+  <!-- Tagline -->
+  <section id="tagline" class="bg-main py-4">
+    <div class="container">
+      <h1>Let's Start Your Next Project</h1>
+    </div>
+  </section>
 
-    <!-- Contact Form -->
-    <section id="contact-a" class="text-center py-3">
-      <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="bottom-line"></div>
-        <p class="lead">Here is how you can get in touch</p>
-        <form method="POST" data-netlify-recaptcha="true" data-netlify="true">
-          <div class="text-fields">
-            <input
-              type="text"
-              class="text-input name-input"
-              placeholder="Name"
-              name="name"
-            />
-            <input
-              type="text"
-              class="text-input subject-input"
-              placeholder="Subject"
-              name="subject"
-            />
-            <input
-              type="email"
-              class="text-input email-input"
-              placeholder="Email"
-              name="email"
-            />
-            <input
-              type="text"
-              class="text-input phone-input"
-              placeholder="Phone Number"
-              name="phone"
-            />
-            <textarea
-              class="text-input message-input"
-              placeholder="Enter Message"
-              name="message"
-            ></textarea>
-            <div class="my-2">
-              <div data-netlify-recaptcha="true"></div>
-            </div>
-          </div>
-          <button type="submit" class="btn-dark">Submit</button>
-        </form>
-      </div>
-      <div class="scroll-button">
-        <div class="scroll-top">
-          <div class="scroll-arrow">
-            <i class="fa fa-angle-up fa-3x"></i>
+  <!-- Contact Form -->
+  <section id="contact-a" class="text-center py-3">
+    <div class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="bottom-line"></div>
+      <p class="lead">Here is how you can get in touch</p>
+      <form method="POST" data-netlify-recaptcha="true" data-netlify="true">
+        <div class="text-fields">
+          <input type="text" class="text-input name-input" placeholder="Name" name="name" />
+          <input type="text" class="text-input subject-input" placeholder="Subject" name="subject" />
+          <input type="email" class="text-input email-input" placeholder="Email" name="email" />
+          <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" />
+          <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
+          <div class="my-2">
+            <div data-netlify-recaptcha="true"></div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer id="main-footer">
-      <div class="footer-content container">
-        <p>Copyright &copy; 2022. All Rights Reserved</p>
-        <div class="social">
-          <a
-            class="web-link"
-            target="_blank"
-            href="https://github.com/mohfaruk"
-          >
-            <i class="fab fa-github"></i
-          ></a>
-          <a
-            class="web-link"
-            target="_blank"
-            href="https://www.linkedin.com/in/mohamad-faruk-9b9523229/"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
+        <button type="submit" class="btn-dark">Submit</button>
+      </form>
+    </div>
+    <div class="scroll-button">
+      <div class="scroll-top">
+        <div class="scroll-arrow">
+          <i class="fa fa-angle-up fa-3x"></i>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- Smooth Scroll Effect  -->
-    <script src="./dist/js/app.js"></script>
-  </body>
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="footer-content container">
+      <p>Copyright &copy; 2022. All Rights Reserved</p>
+      <div class="social">
+        <a class="web-link" target="_blank" href="https://github.com/mohfaruk">
+          <i class="fab fa-github"></i></a>
+        <a class="web-link" target="_blank" href="https://www.linkedin.com/in/mohamad-faruk-9b9523229/">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript  -->
+  <script src="./dist/js/app.js"></script>
+</body>
+
 </html>

@@ -1,54 +1,10 @@
-// Header
-#header {
-    &-bg {
-        background: $main-color no-repeat center/cover;
-        //position: relative;
-        height: 100vh;
-    }
-
-    // Header Content
-    .header {
-        &-content {
-            text-align: center;
-            padding: 200px;
-            font-family: 'Original Surfer', cursive;
-
-            h1 {
-                font-size: 5rem;
-                letter-spacing: 3px;
-                line-height: 1.2;
-                text-transform: uppercase;
-            }
-
-            h2 {
-                font-size: 3.5rem;
-                letter-spacing: 3px;
-                margin-bottom: 1.2rem;
-                text-transform: uppercase;
-            }
-        }
-
-        &-buttons {
-
-            i {
-                color: #000;
-                margin: 1.5rem;
-
-                &:hover {
-                    color: $secondary-color;
-                    transition: .5s;
-                }
-            }
-        }
-
-    }
-
-
-}
-
 // NavBar
-#main-nav {
+.navbar {
     font-family: 'El Messiri', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
 
     .logo-title,
     a {
@@ -62,26 +18,90 @@
         font-weight: bold;
     }
 
-    ul {
-        float: right;
-        margin-right: 20px;
+    // .navbar {
+    //     min-height: 70px;
+    //     display: flex;
+    //     justify-content: space-between;
+    //     align-items: center;
+    //     padding: 0 24px;
+    // }
 
-        li {
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+
+        .menu-item {
             display: inline-block;
-            line-height: 80px;
             margin: 0 10px;
-            padding: 0 15px;
-        }
-
-        a {
             font-size: 20px;
             text-transform: uppercase;
         }
 
-        a:hover {
+        .menu-item:hover {
             border-bottom: 5px solid;
             border-color: $secondary-color;
             transition: .3s;
+        }
+    }
+
+    .hamburger {
+        display: none;
+        cursor: pointer;
+
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #000;
+        }
+    }
+}
+
+// Header
+.header {
+    &-bg {
+        background: $main-color;
+        height: 100vh;
+    }
+
+    // Header Content
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 200px;
+        font-family: 'Original Surfer', cursive;
+
+        h1 {
+            font-size: 5rem;
+            letter-spacing: 3px;
+            line-height: 1.2;
+        }
+
+        h2 {
+            background-color: $secondary-color;
+            font-size: 3.5rem;
+            letter-spacing: 3px;
+            margin-bottom: 1.2rem;
+        }
+    }
+
+    &-buttons {
+
+        i {
+            color: #000;
+            margin: 1.5rem;
+
+            &:hover {
+                color: $secondary-color;
+                transition: .5s;
+            }
         }
     }
 }

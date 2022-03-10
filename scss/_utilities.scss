@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 html,body{
@@ -20,11 +21,11 @@ body {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
-h2,
-h3,
-h4 {
+h1, h2
+ {
     text-transform: uppercase;
 }
 
@@ -38,8 +39,6 @@ img {
     margin: auto;
     overflow: hidden;
 }
-
-
 
 #tagline {
     h1 {
