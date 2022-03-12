@@ -138,15 +138,12 @@
     html,body{
         overflow-x: hidden;
     }
-
     .header {
-        // h1 {
-        //     font-size: 2rem;
-        // }
+        p {
+            font-size: 1.5rem;
+        }
 
         &-buttons {
-            gap: 50px;
-
             i {
                 font-size: 35px;
             }

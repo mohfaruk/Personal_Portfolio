@@ -235,7 +235,7 @@ input[class^=btn-]:hover {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  margin: 200px;
+  margin-top: 200px;
   font-family: "Original Surfer", cursive;
 }
 
@@ -245,10 +245,11 @@ input[class^=btn-]:hover {
   line-height: 1.2;
 }
 
-.header-content h2 {
+.header-content .typewriter p {
   color: #008080;
-  font-size: 3.5rem;
-  letter-spacing: 3px;
+  font-size: 1.56rem;
+  padding: 0.2em 0.4em;
+  margin-top: 0.8em;
   margin-bottom: 1.2rem;
 }
 
@@ -263,7 +264,7 @@ input[class^=btn-]:hover {
   -ms-flex-align: center;
   align-items: center;
   margin-right: 40px;
-  gap: 100px;
+  gap: 50px;
 }
 
 .header-buttons i {
@@ -409,7 +410,7 @@ input[class^=btn-]:hover {
   -ms-flex-align: center;
   align-items: center;
   text-align: center;
-  margin: 200px;
+  margin-top: 200px;
   font-family: "Original Surfer", cursive;
 }
 
@@ -419,10 +420,11 @@ input[class^=btn-]:hover {
   line-height: 1.2;
 }
 
-.header-content h2 {
+.header-content .typewriter p {
   color: #008080;
-  font-size: 3.5rem;
-  letter-spacing: 3px;
+  font-size: 1.56rem;
+  padding: 0.2em 0.4em;
+  margin-top: 0.8em;
   margin-bottom: 1.2rem;
 }
 
@@ -437,7 +439,7 @@ input[class^=btn-]:hover {
   -ms-flex-align: center;
   align-items: center;
   margin-right: 40px;
-  gap: 100px;
+  gap: 50px;
 }
 
 .header-buttons i {
@@ -709,8 +711,8 @@ input[class^=btn-]:hover {
     overflow-x: hidden;
   }
 
-  .header-buttons {
-    gap: 50px;
+  .header p {
+    font-size: 1.5rem;
   }
 
   .header-buttons i {
