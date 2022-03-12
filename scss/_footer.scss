@@ -11,11 +11,10 @@
 
         .fab {
             color: #fff;
-            border: 2px #fff solid;
-            border-radius: 50%;
+
 
             &:hover {
-                background: $main-color;
+                color: $main-color;
             }
         }
     }

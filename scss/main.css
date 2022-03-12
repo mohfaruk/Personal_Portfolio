@@ -592,12 +592,10 @@ input[class^='btn-']:hover {
 
 #main-footer .footer-content .fab {
   color: #fff;
-  border: 2px #fff solid;
-  border-radius: 50%;
 }
 
 #main-footer .footer-content .fab:hover {
-  background: #fdad5c;
+  color: #fdad5c;
 }
 
 @media (max-width: 1024px) {
