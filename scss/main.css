@@ -253,7 +253,7 @@ input[class^='btn-']:hover {
 }
 
 .header-content .scroll-down i {
-  margin: 100px 0;
+  margin: 200px 0;
   color: #fff;
   -webkit-animation: blinker 1s linear infinite;
           animation: blinker 1s linear infinite;
@@ -446,7 +446,7 @@ input[class^='btn-']:hover {
 }
 
 .header-content .scroll-down i {
-  margin: 100px 0;
+  margin: 200px 0;
   color: #fff;
   -webkit-animation: blinker 1s linear infinite;
           animation: blinker 1s linear infinite;
@@ -726,6 +726,9 @@ input[class^='btn-']:hover {
   }
   .header-buttons i {
     font-size: 35px;
+  }
+  .header .scroll-down i {
+    margin: 50px 0;
   }
   #skills-section .skills-logos {
     margin-right: 40px;
