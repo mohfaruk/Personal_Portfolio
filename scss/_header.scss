@@ -81,26 +81,26 @@
         .typewriter {
             p {
                 color: $secondary-color;
-                font-size: 1.56rem;
+                font-size: 2.5rem;
                 padding: 0.2em 0.4em;
-                margin-top: 0.8em;
-                margin-bottom: 1.2rem;
+                margin: 0.8em 0;
             }
         }
 
+        .scroll-down {
+            i {
+                margin: 100px 0;
+                color: #fff;
+                animation: blinker 1s linear infinite;
+            }
 
+            @keyframes blinker {
 
-        //Use below for arrow
-
-        // span {
-        //     animation: blinker 1s linear infinite;
-        // }
-
-        // @keyframes blinker{
-        //     50%{
-        //         opacity: 50%
-        //     }
-        // }
+                50% {
+                    opacity: 50%
+                }
+            }
+        }
     }
 
     &-buttons {

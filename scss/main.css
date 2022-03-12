@@ -247,10 +247,28 @@ input[class^='btn-']:hover {
 
 .header-content .typewriter p {
   color: #008080;
-  font-size: 1.56rem;
+  font-size: 2.5rem;
   padding: 0.2em 0.4em;
-  margin-top: 0.8em;
-  margin-bottom: 1.2rem;
+  margin: 0.8em 0;
+}
+
+.header-content .scroll-down i {
+  margin: 100px 0;
+  color: #fff;
+  -webkit-animation: blinker 1s linear infinite;
+          animation: blinker 1s linear infinite;
+}
+
+@-webkit-keyframes blinker {
+  50% {
+    opacity: 50%;
+  }
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 50%;
+  }
 }
 
 .header-buttons {
@@ -422,10 +440,22 @@ input[class^='btn-']:hover {
 
 .header-content .typewriter p {
   color: #008080;
-  font-size: 1.56rem;
+  font-size: 2.5rem;
   padding: 0.2em 0.4em;
-  margin-top: 0.8em;
-  margin-bottom: 1.2rem;
+  margin: 0.8em 0;
+}
+
+.header-content .scroll-down i {
+  margin: 100px 0;
+  color: #fff;
+  -webkit-animation: blinker 1s linear infinite;
+          animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 50%;
+  }
 }
 
 .header-buttons {
@@ -691,8 +721,8 @@ input[class^='btn-']:hover {
   html, body {
     overflow-x: hidden;
   }
-  .header p {
-    font-size: 1.5rem;
+  .header .typewriter p {
+    font-size: 1.7rem;
   }
   .header-buttons i {
     font-size: 35px;
