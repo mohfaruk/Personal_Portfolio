@@ -2,7 +2,7 @@
 .navbar {
     font-family: 'El Messiri', sans-serif;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 24px;
 
@@ -99,6 +99,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-right: 40px;
         gap: 100px;
 
         i {

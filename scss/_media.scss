@@ -1,3 +1,83 @@
+@media(max-width: 1024px) {
+    #main-nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            padding: 1rem;
+        }
+    }
+
+    #tagline {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+
+    #home {
+        &-a {
+            .specials div {
+                padding-bottom: 1rem;
+
+                &:last-child {
+                    border: none;
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        &-b {
+            .stats div {
+                padding: 2rem 0 1rem 0;
+            }
+        }
+    }
+
+    #about-section {
+        .about-info {
+            display: block;
+        }
+
+    }
+
+    #skills-section {
+        .skills-logos {
+            display: grid;
+            grid-template-columns: 140px 140px 140px;
+        }
+    }
+
+    //Projects
+    .projects {
+        grid-template-columns: 500px;
+    }
+
+    // Contact
+    #contact {
+        &-a {
+            .text-fields {
+                grid-template-areas: 'name''subject''email''phone''message';
+            }
+
+            button[type='submit'] {
+                width: 30%;
+            }
+        }
+    }
+
+    // Footer
+    #main-footer {
+        height: 7rem;
+
+        .footer-content {
+            flex-direction: column;
+            padding: 1rem;
+            height: 5rem;
+        }
+    }
+}
+
 @media(max-width: 880px) {
     .navbar {
         .hamburger {
@@ -54,84 +134,37 @@
     }
 }
 
-
-@media(max-width: 1024px) {
-    #main-nav {
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-
-        li {
-            padding: 1rem;
-        }
+@media (max-width: 500px) {
+    html,body{
+        overflow-x: hidden;
     }
 
-    #tagline {
-        h1 {
-            font-size: 2rem;
-        }
-    }
+    .header {
+        // h1 {
+        //     font-size: 2rem;
+        // }
 
-    #home {
-        &-a {
-            .specials div {
-                padding-bottom: 1rem;
+        &-buttons {
+            gap: 50px;
 
-                &:last-child {
-                    border: none;
-                    padding-bottom: 0;
-                }
+            i {
+                font-size: 35px;
             }
         }
-
-        &-b {
-            .stats div {
-                padding: 2rem 0 1rem 0;
-            }
-        }
-    }
-
-    #about-section {
-        .about-info {
-            display: block;
-        }
-
     }
 
     #skills-section {
         .skills-logos {
-            display: grid;
-            grid-template-columns: 140px 140px 140px;
+            margin-right: 40px;
 
+           i {
+               transform: scale(0.8);
+           }
         }
     }
 
     //Projects
     .projects {
-        grid-template-columns: 500px;
-    }
-
-    // Contact
-    #contact {
-        &-a {
-            .text-fields {
-                grid-template-areas: 'name''subject''email''phone''message';
-            }
-
-            button[type='submit'] {
-                width: 30%;
-            }
-        }
-    }
-
-    // Footer
-    #main-footer {
-        height: 7rem;
-
-        .footer-content {
-            flex-direction: column;
-            padding: 1rem;
-            height: 5rem;
-        }
+        grid-template-columns: 400px;
     }
 }

@@ -9,10 +9,6 @@
     box-sizing: border-box;
 }
 
-html,body{
-    overflow-x: hidden;
-}
-
 body {
     font-family: 'Dosis', sans-serif;
     line-height: 1.6;
@@ -35,8 +31,8 @@ img {
 
 .container {
     max-width: $website-width;
-    padding: 0 1.5rem;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0 1em;
     overflow: hidden;
 }
 
