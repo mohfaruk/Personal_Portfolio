@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -27,7 +26,7 @@ img {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 1em;
   overflow: hidden;
@@ -81,11 +80,13 @@ input[class^=btn-]:hover {
   height: 50px;
   text-align: center;
   border-radius: 4px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .scroll-top:hover {
   cursor: pointer;
-  background-color: #fdad5c;
+  background-color: #008080;
 }
 
 .bg-main {
@@ -236,7 +237,7 @@ input[class^=btn-]:hover {
   align-items: center;
   text-align: center;
   margin-top: 200px;
-  font-family: "Original Surfer", cursive;
+  font-family: "El Messiri", sans-serif;
 }
 
 .header-content h1 {
@@ -245,28 +246,46 @@ input[class^=btn-]:hover {
   line-height: 1.2;
 }
 
-.header-content .typewriter p {
+.header-content .second-header {
   color: #008080;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  letter-spacing: 3px;
   padding: 0.2em 0.4em;
-  margin: 0.8em 0;
 }
 
 .header-content .scroll-down i {
   margin: 200px 0;
   color: #fff;
-  -webkit-animation: blinker 1s linear infinite;
-  animation: blinker 1s linear infinite;
+  -webkit-animation: bounce 1s linear infinite;
+  animation: bounce 1s linear infinite;
 }
 
-@-webkit-keyframes blinker {
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
   50% {
-    opacity: 50%;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
-@keyframes blinker {
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
   50% {
-    opacity: 50%;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .header-buttons {
@@ -326,7 +345,7 @@ input[class^=btn-]:hover {
 }
 
 #skills-section .skills-logos i {
-  margin: 60px;
+  margin: 70px 50px;
 }
 
 #skills-section .skills-logos i span {
@@ -427,7 +446,7 @@ input[class^=btn-]:hover {
   align-items: center;
   text-align: center;
   margin-top: 200px;
-  font-family: "Original Surfer", cursive;
+  font-family: "El Messiri", sans-serif;
 }
 
 .header-content h1 {
@@ -436,23 +455,32 @@ input[class^=btn-]:hover {
   line-height: 1.2;
 }
 
-.header-content .typewriter p {
+.header-content .second-header {
   color: #008080;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  letter-spacing: 3px;
   padding: 0.2em 0.4em;
-  margin: 0.8em 0;
 }
 
 .header-content .scroll-down i {
   margin: 200px 0;
   color: #fff;
-  -webkit-animation: blinker 1s linear infinite;
-  animation: blinker 1s linear infinite;
+  -webkit-animation: bounce 1s linear infinite;
+  animation: bounce 1s linear infinite;
 }
 
-@keyframes blinker {
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
   50% {
-    opacity: 50%;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
 }
 .header-buttons {
@@ -589,10 +617,12 @@ input[class^=btn-]:hover {
 
 #main-footer .footer-content .fab {
   color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 #main-footer .footer-content .fab:hover {
-  color: #fdad5c;
+  color: #008080;
 }
 
 @media (max-width: 1024px) {
@@ -687,7 +717,7 @@ input[class^=btn-]:hover {
   }
 
   .navbar .nav-menu {
-    position: fixed;
+    position: absolute;
     left: -100%;
     top: 60px;
     gap: 0;
@@ -696,7 +726,7 @@ input[class^=btn-]:hover {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-color: #ccc;
+    background-color: #008080;
     text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -704,6 +734,20 @@ input[class^=btn-]:hover {
 
   .navbar .nav-menu .menu-item {
     margin: 16px 0;
+  }
+
+  .navbar .nav-menu .menu-item a {
+    color: #fff;
+  }
+
+  .navbar .nav-menu .menu-item:hover {
+    border-bottom: none;
+  }
+
+  .navbar .nav-menu .menu-item:hover a {
+    color: #ccc;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
   }
 
   .navbar .nav-menu.active {
@@ -727,12 +771,13 @@ input[class^=btn-]:hover {
     font-size: 3rem;
   }
 
-  .header-content h2 {
+  .header-content .second-header {
     font-size: 2rem;
   }
 }
 @media (max-width: 500px) {
-  html, body {
+  html,
+body {
     overflow-x: hidden;
   }
 

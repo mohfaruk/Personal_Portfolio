@@ -1,6 +1,5 @@
 //Google Fonts
 @import url('https://fonts.googleapis.com/css2?family=El+Messiri&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
 
 //General Styles
 * {
@@ -92,10 +91,11 @@ input[class^='btn-']:hover {
         height: 50px;
         text-align: center;
         border-radius: 4px;
+        transition: 0.5s;
 
         &:hover {
             cursor: pointer;
-            background-color: $main-color;
+            background-color: $secondary-color;
         }
     }
 }

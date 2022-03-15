@@ -97,18 +97,32 @@
         }
 
         .nav-menu {
-            position: fixed;
+            position: absolute;
             left: -100%;
             top: 60px;
             gap: 0;
             width: 100%;
             flex-direction: column;
-            background-color: $medium-color;
+            background-color: $secondary-color;
             text-align: center;
             transition: 0.3s;
 
             .menu-item {
                 margin: 16px 0;
+
+                a {
+                    color: #fff;
+                }
+            }
+
+            .menu-item:hover {
+                border-bottom: none;
+
+                a {
+                    color: $medium-color;
+                    transition: .3s;
+                }
+                
             }
         }
 
@@ -127,7 +141,7 @@
                 font-size: 3rem;
             }
 
-            h2 {
+            .second-header {
                 font-size: 2rem;
             }
         }
@@ -135,9 +149,12 @@
 }
 
 @media (max-width: 500px) {
-    html,body{
+
+    html,
+    body {
         overflow-x: hidden;
     }
+
     .header {
 
         .typewriter {
@@ -145,7 +162,7 @@
                 font-size: 1.7rem;
             }
         }
-        
+
 
         &-buttons {
             i {
@@ -164,9 +181,9 @@
         .skills-logos {
             margin-right: 40px;
 
-           i {
-               transform: scale(0.8);
-           }
+            i {
+                transform: scale(0.8);
+            }
         }
     }
 
