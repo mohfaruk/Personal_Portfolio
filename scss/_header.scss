@@ -89,22 +89,7 @@
             i {
                 margin: 200px 0;
                 color: #fff;
-                animation: bounce 1s linear infinite;
-            }
-
-            @keyframes bounce {
-
-                0% {
-                    transform: translateY(0);
-                }
-
-                50% {
-                    transform: translateY(10px);
-                }
-
-                100% {
-                    transform: translateY(0);
-                }
+                animation: $bounce-animation;
             }
         }
     }
@@ -121,6 +106,7 @@
 
             &:hover {
                 color: $secondary-color;
+                animation: $shake-animation;
                 transition: .5s;
             }
         }

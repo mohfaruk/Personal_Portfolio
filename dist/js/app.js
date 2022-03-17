@@ -36,7 +36,7 @@ function smoothScroll(event) {
 function smoothScrollDown(event) {
   event.preventDefault();
   window.scroll({
-    top: 950,
+    top: 800,
     left: 0,
     behavior: "smooth",
   });

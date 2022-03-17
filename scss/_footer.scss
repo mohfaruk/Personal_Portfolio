@@ -16,6 +16,7 @@
 
             &:hover {
                 color: $secondary-color;
+                animation: $shake-animation;
             }
         }
     }
