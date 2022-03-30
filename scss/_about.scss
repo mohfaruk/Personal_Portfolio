@@ -1,14 +1,14 @@
-#about-section {
-    .about-info {
+.about {
+    &-info {
         display: flex;
         justify-content: center;
+
+        h2 {
+            margin-bottom: 1.2rem;
+        }
     }
 
-    h2 {
-        margin-bottom: 1.2rem;
-    }
-
-    .bio {
+    &-bio {
         padding: 1.5rem 2.5rem;
         line-height: 2rem;
         font-size: 1.2rem;
@@ -16,6 +16,12 @@
         p {
             text-align: left;
         }
+
+
+    }
+
+    &-btn {
+        justify-content: center;
     }
 }
 

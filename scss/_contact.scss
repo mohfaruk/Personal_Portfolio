@@ -1,46 +1,45 @@
 // Contact Form
-#contact{
-    &-a {
-        .text-fields {
-            display: grid;
-            grid-template-areas: 'name email'
-                                 'subject phone'
-                                 'message message';
-            grid-gap: 1.2rem;
-            margin-bottom: 1.2rem;
-            
-            // Grid Areas
-            .name-input {
-                grid-area: name;
-            }
+#contact-section {
 
-            .subject-input {
-                grid-area: subject;
-            }
+    .text-fields {
+        display: grid;
+        grid-template-areas: 'name email'
+            'subject phone'
+            'message message';
+        grid-gap: 1.2rem;
+        margin-bottom: 1.2rem;
 
-            .email-input {
-                grid-area: email;
-            }
-
-            .phone-input {
-                grid-area: phone;
-            }
-
-            .message-input {
-                grid-area: message;
-                height: 100px;
-            }
-
-            .text-input {
-                padding: 0.5rem 1rem;
-            }
+        // Grid Areas
+        .name-input {
+            grid-area: name;
         }
 
-        button[type='submit'] {
-            width: 15%;
+        .subject-input {
+            grid-area: subject;
         }
 
+        .email-input {
+            grid-area: email;
+        }
+
+        .phone-input {
+            grid-area: phone;
+        }
+
+        .message-input {
+            grid-area: message;
+            height: 100px;
+        }
+
+        .text-input {
+            padding: 0.5rem 1rem;
+        }
     }
+
+    button[type='submit'] {
+        width: 15%;
+    }
+
 }
 
 // Scroll Up Button 

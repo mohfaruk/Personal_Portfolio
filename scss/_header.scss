@@ -1,3 +1,59 @@
+// Header
+.header {
+    &-bg {
+        background: $main-color;
+        height: 100vh;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 200px;
+        font-family: $header-font;
+
+        h1 {
+            font-size: 5rem;
+            letter-spacing: 3px;
+            line-height: 1.2;
+        }
+
+        .second-header {
+            color: $secondary-color;
+            font-size: 3rem;
+            letter-spacing: 3px;
+            padding: 0.2em 0.4em;
+        }
+
+        .scroll-down {
+            i {
+                margin: 200px 0;
+                color: #fff;
+                animation: $bounce-animation;
+            }
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 40px;
+        gap: 50px;
+
+        i {
+            color: #000;
+
+            &:hover {
+                color: $secondary-color;
+                animation: $shake-animation;
+                transition: .5s;
+            }
+        }
+    }
+}
+
 // NavBar
 .navbar {
     font-family: $header-font;
@@ -50,65 +106,6 @@
             -webkit-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
             background-color: #000;
-        }
-    }
-}
-
-// Header
-
-
-.header {
-    &-bg {
-        background: $main-color;
-        height: 100vh;
-    }
-
-    // Header Content
-    &-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: 200px;
-        font-family: $header-font;
-
-        h1 {
-            font-size: 5rem;
-            letter-spacing: 3px;
-            line-height: 1.2;
-        }
-
-        .second-header {
-            color: $secondary-color;
-            font-size: 3rem;
-            letter-spacing: 3px;
-            padding: 0.2em 0.4em;
-        }
-
-        .scroll-down {
-            i {
-                margin: 200px 0;
-                color: #fff;
-                animation: $bounce-animation;
-            }
-        }
-    }
-
-    &-buttons {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-right: 40px;
-        gap: 50px;
-
-        i {
-            color: #000;
-
-            &:hover {
-                color: $secondary-color;
-                animation: $shake-animation;
-                transition: .5s;
-            }
         }
     }
 }
