@@ -598,6 +598,11 @@ input[class^='btn-']:hover {
   padding: 1.5rem 2.5rem;
 }
 
+.item-image img {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 5px 10px 15px;
+          box-shadow: rgba(0, 0, 0, 0.5) 5px 10px 15px;
+}
+
 .item-description {
   padding: 1.5rem 2.5rem;
   line-height: 2rem;
