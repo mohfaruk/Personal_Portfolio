@@ -598,6 +598,13 @@ input[class^=btn-]:hover {
 .item-image img {
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 5px 10px 15px;
   box-shadow: rgba(0, 0, 0, 0.5) 5px 10px 15px;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.item-image img:hover {
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 
 .item-description {

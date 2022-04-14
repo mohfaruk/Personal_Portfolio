@@ -13,9 +13,12 @@
         padding: 1.5rem 2.5rem;
 
         img {
-            // height: 200px;
-            // width: 200px;
             box-shadow: rgba(0, 0, 0, 0.5) 5px 10px 15px;
+            transition: all 0.2s ease-out;
+        }
+
+        img:hover {
+            transform: translateY(-10px);
         }
     }
 
