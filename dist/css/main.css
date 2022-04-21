@@ -403,7 +403,7 @@ input[class^=btn-]:hover {
 }
 
 .about-bio p {
-  text-align: left;
+  text-align: center;
 }
 
 .about-btn {
@@ -582,10 +582,6 @@ input[class^=btn-]:hover {
   -ms-flex-pack: center;
   justify-content: center;
   margin: auto;
-}
-
-.item {
-  margin-bottom: 2.5rem;
 }
 
 .item-image {
@@ -867,6 +863,10 @@ body {
   .projects {
     -ms-grid-columns: 400px;
     grid-template-columns: 400px;
+  }
+
+  .item {
+    margin: 1.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
