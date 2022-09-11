@@ -474,6 +474,9 @@ input[class^=btn-]:hover {
 }
 
 @media (max-width: 1024px) {
+  .header-content {
+    margin-top: 100px;
+  }
   .navbar {
     flex-direction: row;
     align-items: center;
@@ -549,7 +552,6 @@ input[class^=btn-]:hover {
   }
   .header-content {
     display: flex;
-    margin-top: 100px;
     flex-direction: column;
     align-items: center;
   }
