@@ -1,0 +1,28 @@
+Portfolio Tickets
+After amending the template structure of website, it is much 
+more responsive and the design is consistent on various devices.
+
+I do intend on changing the colour theme of the website so it
+is more professional and stands out.
+
+Header:
+- Navbar text should be larger, and make Name take you to homepage []
+- Make header text larger []
+- Add link button to CV []
+- Background and website theme should be black & white aesthetic []
+
+About:
+- Seperate about me text and skills, so skills is beneath about me []
+- Add icons under each skill much like original portfolio version []
+
+
+Projects:
+- Have projects alongside each other []
+- Projects image should be squared much like original []
+- Make text more easier on eyes to read []
+
+Contact:
+- Add contact form that links to my email and with captcha to prevent bots []
+
+Extra:
+- For aesthetic purposes, make bottom of each section cut off by a diagnol line []
