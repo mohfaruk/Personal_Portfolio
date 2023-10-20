@@ -38,9 +38,6 @@
     <header class="header">
       <nav class="navbar">
         <div class="navbar-container container">
-          <div>
-            <h1 class="navbar-brand">Mohamad Faruk</h1>
-          </div>
           <ul class="menu-items">
             <li><a href="#about">About</a></li>
             <li><a href="#my-works">Projects</a></li>
@@ -49,22 +46,22 @@
         </div>
       </nav>
       <div class="home-content" id="home-page">
-        <div class="name">
+        <div class="home-title">
           <h1>Hello, I'm Mohamad</h1>
-          <p>Front End Developer</p>
+          <h2>Front End Developer</h2>
         </div>
         <div class="angle-down-icon">
           <a href="#about"><i class="fas fa-angle-down"></i></a>
         </div>
       </div>
     </header>
-    <section class="about-me" id="about">
+
+    <section id="about-section" class="about-section">
       <div class="container">
-        <div class="about-content">
-          <div class="left-content">
-            <div>
-              <h1 class="about-heading">About Me</h1>
-            </div>
+        <div class="about-info">
+          <div class="about-bio">
+            <h2 class="section-title">About Me</h2>
+            <div class="bottom-line"></div>
             <p>
               I am a Front-End Software Engineer with a passion for creating
               high quality UX that is accessible and meaningful to the end user.
@@ -72,64 +69,34 @@
               difference to people's lives. I place importance on working within
               environments that encourage continuous learning and collaboration.
             </p>
-            <div class="work-arrow">
-              <p>
-                <a href="#my-works"
-                  >Check out my work <i class="fas fa-arrow-down"></i
-                ></a>
-              </p>
-            </div>
-          </div>
-          <div class="skills">
-            <div class="right-content">
-              <div>
-                <h1 class="skills-heading">My Skills</h1>
-              </div>
-              <div class="skills-bar">
-                <div class="bar">
-                  <div class="info">
-                    <span>HTML</span>
-                  </div>
-                  <div class="bar">
-                    <div class="info">
-                      <span>CSS</span>
-                    </div>
-                    <div class="bar">
-                      <div class="info">
-                        <span>JavaScript</span>
-                      </div>
-                        <span class="bootstrap"></span>
-                      </div>
-                      <div class="bar">
-                        <div class="info">
-                          <span>Sass</span>
-                        </div>                       
-                          <span class="javascript"></span>
-                        </div>
-                        <div class="bar">
-                          <div class="info">
-                            <span>NPM</span>
-                          </div>                     
-                            <span class="c"></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="work-arrow-2">
-                <p>
-                  <a href="#my-works"
-                    >Check out my work <i class="fas fa-arrow-down"></i
-                  ></a>
-                </p>
-              </div>
-            </div>
+            <a
+              href="./dist/img/items/Mohamad Faruk CV.pdf"
+              target="_blank"
+              class="btn-dark about-btn"
+              >View CV</a
+            >
           </div>
         </div>
       </div>
+
+      <!-- Skills Section -->
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="bottom-line"></div>
+        <div class="skills-logos">
+          <i class="fab fa-brands fa-html5 fa-3x"><span>html</span></i>
+          <i class="fab fa-brands fa-css3 fa-3x"><span>css</span> </i>
+          <i class="fab fa-brands fa-js fa-3x"><span>javascript</span></i>
+          <i class="fab fa-brands fa-react fa-3x"><span>react</span></i>
+          <i class="fab fa-brands fa-sass fa-3x"><span>sass</span></i>
+          <i class="fab fa-brands fa-npm fa-3x"><span>npm</span></i>
+          <i class="fab fa-brands fa-github fa-3x"><span>git/github</span></i>
+          <i class="fab fa-brands fa-node fa-3x"><span>node.js</span></i>
+          <i class="fab fa-brands fa-envira fa-3x"><span>mongodb</span></i>
+        </div>
+      </div>
     </section>
+
     <section id="my-works">
       <div class="portfolio">
         <div class="proj-heading">
@@ -140,13 +107,17 @@
             <img src="./dist/img/items/item1.png" alt="" />
             <div class="proj1-details">
               <h2>Movie Watchlist App</h2>
-              <p> A React application that fetches data from a movie database API.
+              <p>
+                A React application that fetches data from a movie database API.
                 It dynamically renders information on most movies and tv series.
-                Additionally, you are able to add a movie/tv series to a watchlist,
-                which is saved to local storage.
-                <br>
-                <br>
-                <strong>Built with: React, Context API, Router, TMDB API, Material UI, Daisy UI</strong>
+                Additionally, you are able to add a movie/tv series to a
+                watchlist, which is saved to local storage.
+                <br />
+                <br />
+                <strong
+                  >Built with: React, Context API, Router, TMDB API, Material
+                  UI, Daisy UI</strong
+                >
               </p>
               <button>
                 <a
@@ -156,9 +127,7 @@
                 ></a>
               </button>
               <button>
-                <a
-                  href="https://movie-database-self.vercel.app"
-                  target="blank"
+                <a href="https://movie-database-self.vercel.app" target="blank"
                   >Try it Live <i class="fas fa-external-link-alt"></i
                 ></a>
               </button>
@@ -166,17 +135,17 @@
           </div>
 
           <div class="proj-2">
-            <img src="./dist/img/items/item4.png" alt=""/>
+            <img src="./dist/img/items/item4.png" alt="" />
             <div class="proj2-details">
               <h2>Note Keeper</h2>
-              <p> A simple React CRUD application which allows users
-                to create and store notes for display. As is the
-                case with CRUD apps, they are also able to read,
-                update and delete notes. This project was an
+              <p>
+                A simple React CRUD application which allows users to create and
+                store notes for display. As is the case with CRUD apps, they are
+                also able to read, update and delete notes. This project was an
                 opportunity to practice React Hooks.
-              <br>
-              <br>
-              <strong>Built with: React, CSS</strong>
+                <br />
+                <br />
+                <strong>Built with: React, CSS</strong>
               </p>
               <button>
                 <a href="https://github.com/mohfaruk/keeper-app" target="blank"
@@ -184,9 +153,7 @@
                 ></a>
               </button>
               <button>
-                <a
-                  href="https://note-keeper-app.vercel.app"
-                  target="blank"
+                <a href="https://note-keeper-app.vercel.app" target="blank"
                   >Try it Live <i class="fas fa-external-link-alt"></i
                 ></a>
               </button>
@@ -195,6 +162,7 @@
         </div>
       </div>
     </section>
+
     <div class="contact" id="contact-me">
       <div class="container">
         <div class="contact-content">
@@ -204,17 +172,12 @@
             <i class="fas fa-arrow-right"></i> mohamadfaruk@live.com
           </p>
           <p class="links">Or find me on:</p>
-          <a
-            href=""
-            target="blank"
-            ><i class="fab fa-linkedin"> Linkedin</i></a
-          >
-          <a href="" target="blank"
-            ><i class="fab fa-github"></i> Github</a
-          >
+          <a href="" target="blank"><i class="fab fa-linkedin"> Linkedin</i></a>
+          <a href="" target="blank"><i class="fab fa-github"></i> Github</a>
         </div>
       </div>
     </div>
+
     <script type="text/javascript">
       $(document).ready(function () {
         $(window).scroll(function () {

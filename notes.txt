@@ -6,10 +6,10 @@ I do intend on changing the colour theme of the website so it
 is more professional and stands out.
 
 Header:
-- Navbar text should be larger, and make Name take you to homepage []
-- Make header text larger []
+- Navbar text should be larger [x]
+- Make header text larger [x]
 - Add link button to CV []
-- Background and website theme should be black & white aesthetic []
+- Background and website theme should be navy & white aesthetic []
 
 About:
 - Seperate about me text and skills, so skills is beneath about me []
@@ -26,3 +26,5 @@ Contact:
 
 Extra:
 - For aesthetic purposes, make bottom of each section cut off by a diagnol line []
+- For scalabe purposes, create CSS variables for particular colours & sizes easily []
+- Refactor jQuery code in app.js into vanilla JavaScript []
