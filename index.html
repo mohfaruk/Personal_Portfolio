@@ -35,6 +35,7 @@
   </head>
 
   <body>
+    <!-- Header Section -->
     <header class="header">
       <nav class="navbar">
         <div class="navbar-container container">
@@ -49,40 +50,58 @@
         <div class="home-title">
           <h1>Hello, I'm Mohamad</h1>
           <h2>Front End Developer</h2>
+          <div class="header-socials">
+            <a
+              class="web-link"
+              target="_blank"
+              href="https://www.linkedin.com/in/mohamad-faruk-9b9523229/"
+            >
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a class="web-link" target="_blank" href="">
+              <i class="fas fa-envelope fa-2x"></i
+            ></a>
+            <a
+              class="web-link"
+              target="_blank"
+              href="https://github.com/mohfaruk"
+            >
+              <i class="fab fa-github fa-2x"></i
+            ></a>
+          </div>
         </div>
         <div class="angle-down-icon">
-          <a href="#about"><i class="fas fa-angle-down"></i></a>
+          <a href="#about-section"><i class="fas fa-angle-down"></i></a>
         </div>
       </div>
     </header>
 
-    <section id="about-section" class="about-section">
+    <!-- About Section -->
+    <section id="about-section" class="section-container">
       <div class="container">
         <div class="about-info">
           <div class="about-bio">
             <h2 class="section-title">About Me</h2>
-            <div class="bottom-line"></div>
-            <p>
+            <p class="text-left">
               I am a Front-End Software Engineer with a passion for creating
               high quality UX that is accessible and meaningful to the end user.
               I strive to build scalable, maintainable apps that make a
               difference to people's lives. I place importance on working within
               environments that encourage continuous learning and collaboration.
             </p>
-            <a
+            <button
               href="./dist/img/items/Mohamad Faruk CV.pdf"
               target="_blank"
-              class="btn-dark about-btn"
-              >View CV</a
+              class="btn about-btn"
             >
+              View CV
+            </button>
           </div>
         </div>
       </div>
-
       <!-- Skills Section -->
       <div class="container">
         <h2 class="section-title">Skills</h2>
-        <div class="bottom-line"></div>
         <div class="skills-logos">
           <i class="fab fa-brands fa-html5 fa-3x"><span>html</span></i>
           <i class="fab fa-brands fa-css3 fa-3x"><span>css</span> </i>
@@ -91,93 +110,115 @@
           <i class="fab fa-brands fa-sass fa-3x"><span>sass</span></i>
           <i class="fab fa-brands fa-npm fa-3x"><span>npm</span></i>
           <i class="fab fa-brands fa-github fa-3x"><span>git/github</span></i>
-          <i class="fab fa-brands fa-node fa-3x"><span>node.js</span></i>
-          <i class="fab fa-brands fa-envira fa-3x"><span>mongodb</span></i>
         </div>
       </div>
     </section>
 
-    <section id="my-works">
-      <div class="portfolio">
-        <div class="proj-heading">
-          <h1>Projects</h1>
-        </div>
-        <div class="portfolio-content container">
-          <div class="proj-1">
-            <img src="./dist/img/items/item1.png" alt="" />
-            <div class="proj1-details">
-              <h2>Movie Watchlist App</h2>
-              <p>
+    <!-- Project Section -->
+    <section id="projects-section" class="section-container">
+      <div class="container">
+        <h2 class="section-title">My Work</h2>
+        <p>Check out my projects below</p>
+        <div class="projects">
+          <!-- Project 1 -->
+          <div class="item">
+            <div class="item-image">
+              <img src="./dist/img/items/item1.png" alt="" />
+            </div>
+            <div class="item-description">
+              <h3>Movie Watchlist App</h3>
+              <p class="text-left">
                 A React application that fetches data from a movie database API.
                 It dynamically renders information on most movies and tv series.
                 Additionally, you are able to add a movie/tv series to a
                 watchlist, which is saved to local storage.
-                <br />
-                <br />
-                <strong
-                  >Built with: React, Context API, Router, TMDB API, Material
-                  UI, Daisy UI</strong
-                >
               </p>
-              <button>
+              <br />
+              <strong class="text-left"
+                >Built with: React, Context API, Router, TMDB API, Material UI,
+                Daisy UI</strong
+              >
+              <div class="item-buttons">
                 <a
+                  target="_blank"
+                  href="https://movie-database-self.vercel.app/"
+                  ><button class="btn">See Live</button></a
+                >
+                <a
+                  target="_blank"
                   href="https://github.com/mohfaruk/movie-database"
-                  target="blank"
-                  >View source <i class="fas fa-external-link-alt"></i
-                ></a>
-              </button>
-              <button>
-                <a href="https://movie-database-self.vercel.app" target="blank"
-                  >Try it Live <i class="fas fa-external-link-alt"></i
-                ></a>
-              </button>
+                  ><button class="btn">View Code</button></a
+                >
+              </div>
             </div>
           </div>
 
-          <div class="proj-2">
-            <img src="./dist/img/items/item4.png" alt="" />
-            <div class="proj2-details">
-              <h2>Note Keeper</h2>
-              <p>
+          <!-- Project 2 -->
+          <div class="item">
+            <div class="item-image">
+              <img src="./dist/img/items/item4.png" alt="" />
+            </div>
+            <div class="item-description">
+              <h3>Note Keeper</h3>
+              <p class="text-left">
                 A simple React CRUD application which allows users to create and
                 store notes for display. As is the case with CRUD apps, they are
                 also able to read, update and delete notes. This project was an
                 opportunity to practice React Hooks.
-                <br />
-                <br />
-                <strong>Built with: React, CSS</strong>
               </p>
-              <button>
-                <a href="https://github.com/mohfaruk/keeper-app" target="blank"
-                  >View source <i class="fas fa-external-link-alt"></i
-                ></a>
-              </button>
-              <button>
-                <a href="https://note-keeper-app.vercel.app" target="blank"
-                  >Try it Live <i class="fas fa-external-link-alt"></i
-                ></a>
-              </button>
+              <br />
+              <strong class="text-left">Built with: React, CSS</strong>
+              <div class="item-buttons">
+                <a target="_blank" href="https://note-keeper-app.vercel.app"
+                  ><button class="btn">See Live</button></a
+                >
+                <a target="_blank" href="https://github.com/mohfaruk/keeper-app"
+                  ><button class="btn">View Code</button></a
+                >
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <div class="contact" id="contact-me">
-      <div class="container">
-        <div class="contact-content">
-          <h2>Contact Me</h2>
-          <p class="mail">
-            Get in touch with me
-            <i class="fas fa-arrow-right"></i> mohamadfaruk@live.com
+    <!-- Contact Section -->
+    <footer id="footer-section">
+      <div class="footer-content container section-container">
+        <div class="contact-socials">
+          <a
+            class="web-link"
+            target="_blank"
+            href="https://www.linkedin.com/in/mohamad-faruk-9b9523229/"
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a class="web-link" target="_blank" href="">
+            <i class="fas fa-envelope fa-2x"></i
+          ></a>
+          <a
+            class="web-link"
+            target="_blank"
+            href="https://github.com/mohfaruk"
+          >
+            <i class="fab fa-github fa-2x"></i
+          ></a>
+          <a class="web-link" target="_blank" href="">
+            <i class="fas fa-file-pdf fa-2x"></i
+          ></a>
+        </div>
+        <div class="copyright-text">
+          <p>
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            &copy; Mohamad Faruk
           </p>
-          <p class="links">Or find me on:</p>
-          <a href="" target="blank"><i class="fab fa-linkedin"> Linkedin</i></a>
-          <a href="" target="blank"><i class="fab fa-github"></i> Github</a>
         </div>
       </div>
-    </div>
+    </footer>
 
+    <!-- JavaScript -->
     <script type="text/javascript">
       $(document).ready(function () {
         $(window).scroll(function () {
