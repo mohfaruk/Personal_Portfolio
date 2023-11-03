@@ -1,0 +1,23 @@
+Portfolio Tickets
+After amending the template structure of website, it is much 
+more responsive and the design is consistent on various devices.
+
+I do intend on changing the colour theme of the website so it
+is more professional and stands out.
+
+Header:
+- Include sticky navbar on side using Fab icons (appears when scrolling) []
+- Include animated arrow button at bottom of header []
+- Include Socials Fab icons under name title [x]
+
+Sections:
+- Add underline styling for each section title []
+
+Projects:
+- Make text more easier on eyes to read []
+
+Extra:
+- For aesthetic purposes, make bottom of each section cut off by a diaganol line []
+- For scalabe purposes, create CSS variables for particular colours & sizes easily []
+- Add animated hover effect for buttons []
+- Refactor jQuery code in app.js into vanilla JavaScript []

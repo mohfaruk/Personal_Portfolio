@@ -1,284 +1,239 @@
-<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio website" />
+    <meta
+      name="keywords"
+      content="Sanket, bodake, Sanket bodake, portfolio, css, javascript, software, coding, programming, web, 
+  development, developer, frontend"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="IZ7Sm227j_9N0Sy_JmwOvn1_OAm_O2rHr2833ZV0Fro"
+    />
+    <title>Mohamad Faruk</title>
+    <link rel="stylesheet" href="./dist/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/66aa7c98b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:400,700,300|Quattrocento"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="./img/fbavatar_1630400663387_6838396024049256103.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="./dist/css/main.css" />
-  <link rel="icon" type="image/x-icon" href="/dist/img/items/favicon.png">
-  <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" />
-
-  <title>Mohamad Faruk | Web Developer</title>
-</head>
-
-<body>
-  <!-- Header -->
-  <section class="header">
-    <header class="header-bg">
+  <body>
+    <!-- Header Section -->
+    <header class="header">
       <nav class="navbar">
-        <a href="/" class="logo-title">MF</a>
-        <ul class="nav-menu">
-          <li class="menu-item"><a href="#about-section">About</a></li>
-          <li class="menu-item"><a href="#projects-section">Projects</a></li>
-          <li class="menu-item"><a href="#contact-section">Contact</a></li>
-        </ul>
-
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+        <div class="navbar-container container">
+          <ul class="menu-items">
+            <li><a href="#about">About</a></li>
+            <li><a href="#my-works">Projects</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+          </ul>
         </div>
       </nav>
-
-
-      <div class="header-content container">
-        <h1>Hello 👋🏽</h1>
-        <h1> I'm Mohamad</h1>
-        <h2 class="second-header">Web Developer</h2>
-        <div class="header-buttons">
-          <a class="web-link" href="#contact-a"><i class="fab fa fa-envelope fa-3x"></i></a>
-          <a class="web-link" target="_blank" href="https://github.com/mohfaruk"><i
-              class="fab fa-brands fa-github fa-3x"></i></a>
-          <a class="web-link" target="_blank" href="https://www.linkedin.com/in/mohamad-faruk-9b9523229/"><i
-              class="fab fa-brands fa-linkedin fa-3x"></i></a>
+      <div class="home-content" id="home-page">
+        <div class="home-title">
+          <h1>Hello, I'm Mohamad</h1>
+          <h2>Front End Developer</h2>
+          <div class="header-socials">
+            <a
+              class="web-link"
+              target="_blank"
+              href="https://www.linkedin.com/in/mohamad-faruk-9b9523229/"
+            >
+              <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a class="web-link" target="_blank" href="">
+              <i class="fas fa-envelope fa-2x"></i
+            ></a>
+            <a
+              class="web-link"
+              target="_blank"
+              href="https://github.com/mohfaruk"
+            >
+              <i class="fab fa-github fa-2x"></i
+            ></a>
+          </div>
         </div>
-        <div class="scroll-down">
-          <a href="#about-section"><i class="fa fa-angle-down fa-5x"></i></a>
+        <div class="angle-down-icon">
+          <a href="#about-section"><i class="fas fa-angle-down"></i></a>
         </div>
-      </div>
       </div>
     </header>
-  </section>
 
-  <!-- About Me -->
-  <section id="about-section" class="text-center py-3">
-    <div class="container">
-      <div class="about-info">
-        <div class="about-bio">
-          <h2 class="section-title">About Me</h2>
-          <div class="bottom-line"></div>
+    <!-- About Section -->
+    <section id="about-section" class="section-container">
+      <div class="container">
+        <div class="about-info">
+          <div class="about-bio">
+            <h2 class="section-title">About Me</h2>
+            <p class="text-left">
+              I am a Front-End Software Engineer with a passion for creating
+              high quality UX that is accessible and meaningful to the end user.
+              I strive to build scalable, maintainable apps that make a
+              difference to people's lives. I place importance on working within
+              environments that encourage continuous learning and collaboration.
+            </p>
+            <button
+              href="./dist/img/items/Mohamad Faruk CV.pdf"
+              target="_blank"
+              class="btn about-btn"
+            >
+              View CV
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Skills Section -->
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-logos">
+          <i class="fab fa-brands fa-html5 fa-3x"><span>html</span></i>
+          <i class="fab fa-brands fa-css3 fa-3x"><span>css</span> </i>
+          <i class="fab fa-brands fa-js fa-3x"><span>javascript</span></i>
+          <i class="fab fa-brands fa-react fa-3x"><span>react</span></i>
+          <i class="fab fa-brands fa-sass fa-3x"><span>sass</span></i>
+          <i class="fab fa-brands fa-npm fa-3x"><span>npm</span></i>
+          <i class="fab fa-brands fa-github fa-3x"><span>git/github</span></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section id="projects-section" class="section-container">
+      <div class="container">
+        <h2 class="section-title">My Work</h2>
+        <p>Check out my projects below</p>
+        <div class="projects">
+          <!-- Project 1 -->
+          <div class="item">
+            <div class="item-image">
+              <img src="./dist/img/items/item1.png" alt="" />
+            </div>
+            <div class="item-description">
+              <h3>Movie Watchlist App</h3>
+              <p class="text-left">
+                A React application that fetches data from a movie database API.
+                It dynamically renders information on most movies and tv series.
+                Additionally, you are able to add a movie/tv series to a
+                watchlist, which is saved to local storage.
+              </p>
+              <br />
+              <strong class="text-left"
+                >Built with: React, Context API, Router, TMDB API, Material UI,
+                Daisy UI</strong
+              >
+              <div class="item-buttons">
+                <a
+                  target="_blank"
+                  href="https://movie-database-self.vercel.app/"
+                  ><button class="btn">See Live</button></a
+                >
+                <a
+                  target="_blank"
+                  href="https://github.com/mohfaruk/movie-database"
+                  ><button class="btn">View Code</button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="item">
+            <div class="item-image">
+              <img src="./dist/img/items/item4.png" alt="" />
+            </div>
+            <div class="item-description">
+              <h3>Note Keeper</h3>
+              <p class="text-left">
+                A simple React CRUD application which allows users to create and
+                store notes for display. As is the case with CRUD apps, they are
+                also able to read, update and delete notes. This project was an
+                opportunity to practice React Hooks.
+              </p>
+              <br />
+              <strong class="text-left">Built with: React, CSS</strong>
+              <div class="item-buttons">
+                <a target="_blank" href="https://note-keeper-app.vercel.app"
+                  ><button class="btn">See Live</button></a
+                >
+                <a target="_blank" href="https://github.com/mohfaruk/keeper-app"
+                  ><button class="btn">View Code</button></a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="footer-section">
+      <div class="footer-content container section-container">
+        <div class="contact-socials">
+          <a
+            class="web-link"
+            target="_blank"
+            href="https://www.linkedin.com/in/mohamad-faruk-9b9523229/"
+          >
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+          <a class="web-link" target="_blank" href="">
+            <i class="fas fa-envelope fa-2x"></i
+          ></a>
+          <a
+            class="web-link"
+            target="_blank"
+            href="https://github.com/mohfaruk"
+          >
+            <i class="fab fa-github fa-2x"></i
+          ></a>
+          <a class="web-link" target="_blank" href="">
+            <i class="fas fa-file-pdf fa-2x"></i
+          ></a>
+        </div>
+        <div class="copyright-text">
           <p>
-            I am a former case worker who loves to create apps with code.
-            <br />
-            <br />
-            I first tried my hands out with coding in 2020 during a period when everyone was stuck indoors. A
-            friend who works within the tech industry told me about JavaScript and all the cool things you can build
-            with it. I was intrigued and jumped straight into the world of web development. Before I knew it, I was
-            hooked.
-            <br />
-            <br />
-            Whilst managing my full-time job, I worked on numerous projects ranging from a tip calculator to a memory
-            game. I thoroughly enjoyed the process of building innovative apps, and debugging errors in my code.
-            This passion propelled me to learn a range of technologies with the aim of creating solutions to
-            difficult problems.
-            <br />
-            <br />
-            After almost two years of self-teaching, I decided this was what I want to do for my career. During this
-            time, I amassed a portfolio of personal projects that demonstrate my skill and expertise as a web
-            developer. My projects focus on the client side, comprising of
-            front-end technologies such as React. However, I am currently
-            spending my evenings learning back-end technologies such as
-            Node.JS, Express and MongoDB. My long term goal is to become an
-            effective full stack developer, able to efficiently turn great
-            ideas into working products.
-            <br />
-            <br />
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            &copy; Mohamad Faruk
           </p>
-          <a href="./dist/img/items/Mohamad Faruk CV.pdf" target="_blank" class="btn-dark about-btn">View CV</a>
         </div>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- Skills Section -->
-  <section id="skills-section" class="text-center py-4">
-    <div class="container">
-      <h2 class="section-title">Skills</h2>
-      <div class="bottom-line"></div>
-      <div class="skills-logos">
-        <i class="fab fa-brands fa-html5 fa-3x"><span>html</span></i>
-        <i class="fab fa-brands fa-css3 fa-3x"><span>css</span> </i>
-        <i class="fab fa-brands fa-js fa-3x"><span>javascript</span></i>
-        <i class="fab fa-brands fa-react fa-3x"><span>react</span></i>
-        <i class="fab fa-brands fa-sass fa-3x"><span>sass</span></i>
-        <i class="fab fa-brands fa-npm fa-3x"><span>npm</span></i>
-        <i class="fab fa-brands fa-github fa-3x"><span>git/github</span></i>
-        <i class="fab fa-brands fa-node fa-3x"><span>node.js</span></i>
-        <i class="fab fa-brands fa-envira fa-3x"><span>mongodb</span></i>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tagline -->
-  <section id="tagline" class="text-center bg-main py-4">
-    <div class="container">
-      <h1>Check Out My Portfolio...</h1>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects-section" class="text-center py-3">
-    <div class="container">
-      <h2 class="section-title">My Work</h2>
-      <div class="bottom-line"></div>
-      <p class="lead">Check out my projects below</p>
-      <div class="projects">
-        <!-- Project 1 -->
-        <div class="item">
-          <div class="item-image">
-            <img src="./dist/img/items/item1.png" alt="" />
-          </div>
-          <div class="item-text"></div>
-          <div class="item-description">
-            <h2>Movie Watchlist App</h2>
-            <p>
-              A React application that fetches data from a movie database API.
-              It dynamically renders information on most movies and tv series.
-              Additionally, you are able to add a movie/tv series to a watchlist,
-              which is saved to local storage.
-            </p>
-            <br />
-            <strong>Built with: React, Context API, Router, TMDB API, Material UI, Daisy UI</strong>
-            <div class="item-buttons">
-              <a target="_blank" href="https://movie-database-self.vercel.app/"><button class="btn-dark">See
-                  Live</button></a>
-              <a target="_blank" href="https://github.com/mohfaruk/movie-database"><button class="btn-dark">View
-                  Code</button></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="item">
-          <div class="item-image">
-            <img src="./dist/img/items/item2.jpg" alt="" />
-          </div>
-          <div class="item-text"></div>
-          <div class="item-description">
-            <h2>Shopping Website</h2>
-            <p>
-              A E-Commerce website that allows users to add products to a
-              shopping cart and calculates the total cost of items added.
-              Utilises local storage so products are saved. Product details are displayed on the front-end using
-              JSON.
-            </p>
-            <br />
-            <strong>Built with: HTML, CSS, JavaScript</strong>
-            <div class="item-buttons">
-              <a target="_blank" href="https://shopping-website-rose.vercel.app/"><button class="btn-dark">See
-                  Live</button></a>
-              <a target="_blank" href="https://github.com/mohfaruk/shopping-website"><button class="btn-dark">View
-                  Code</button></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="item">
-          <div class="item-image">
-            <img src="./dist/img/items/item3.jpg" alt="" />
-          </div>
-          <div class="item-text"></div>
-          <div class="item-description">
-            <h2>Box&Burn Website</h2>
-            <p>
-              A website I built for a fictitious Sports Fitness Company. I created a professional website design
-              to test my front-end skills using HTML, CSS, vanilla JavaScript.
-            </p>
-            <br />
-            <strong>Built with: HTML, CSS, JavaScript</strong>
-            <div class="item-buttons">
-              <a target="_blank" href="https://boxfit-landing-page.vercel.app/"><button class="btn-dark">See
-                  Live</button></a>
-              <a target="_blank" href="https://github.com/mohfaruk/boxfit-landing-page"><button class="btn-dark">View
-                  Code</button></a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="item">
-          <div class="item-image">
-            <img src="./dist/img/items/item4.png" alt="" />
-          </div>
-          <div class="item-text"></div>
-          <div class="item-description">
-            <h2>Note Keeper</h2>
-            <p>
-              A simple React CRUD application which allows users
-              to create and store notes for display. As is the
-              case with CRUD apps, they are also able to read,
-              update and delete notes. This project was an
-              opportunity to practice React Hooks.
-            </p>
-            <br />
-            <strong>Built with: React, CSS</strong>
-            <div class="item-buttons">
-              <a target="_blank" href="https://note-keeper-app.vercel.app"><button class="btn-dark">See
-                  Live</button></a>
-              <a target="_blank" href="https://github.com/mohfaruk/keeper-app"><button class="btn-dark">View
-                  Code</button></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Tagline -->
-  <section id="tagline" class="text-center bg-main py-4">
-    <div class="container">
-      <h1>Let's Start Your Next Project</h1>
-    </div>
-  </section>
-
-  <!-- Contact Form -->
-  <section id="contact-section" class="text-center py-3">
-    <div class="container">
-      <h2 class="section-title">Contact Me</h2>
-      <div class="bottom-line"></div>
-      <p class="lead">Here is how you can get in touch</p>
-      <p class="lead">Please complete the contact form below. Alternatively, you can email me on
-        <strong>mohamadfaruk@live.com</strong> 📧</p>
-      <form method="POST" data-netlify-recaptcha="true" data-netlify="true">
-        <div class="text-fields">
-          <input type="text" class="text-input name-input" placeholder="Name" name="name" />
-          <input type="text" class="text-input subject-input" placeholder="Subject" name="subject" />
-          <input type="email" class="text-input email-input" placeholder="Email" name="email" />
-          <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" />
-          <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
-          <div data-netlify-recaptcha="true"></div>
-        </div>
-        <button type="submit" class="btn-dark">Submit</button>
-      </form>
-    </div>
-    <div class="scroll-button">
-      <div class="scroll-top">
-        <div class="scroll-arrow">
-          <i class="fa fa-angle-up fa-3x"></i>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="footer-section">
-    <div class="footer-content container">
-      <p>Copyright &copy; 2022. All Rights Reserved</p>
-      <div class="social">
-        <a class="web-link" target="_blank" href="https://github.com/mohfaruk">
-          <i class="fab fa-github"></i></a>
-        <a class="web-link" target="_blank" href="https://www.linkedin.com/in/mohamad-faruk-9b9523229/">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- JavaScript  -->
-  <script src="./dist/js/app.js"></script>
-</body>
-
+    <!-- JavaScript -->
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          if ($(this).scrollTop() > 550) {
+            $(".navbar").addClass("solid");
+            $(".back-to-top").addClass("visible");
+          } else {
+            $(".navbar").removeClass("solid");
+            $(".back-to-top").removeClass("visible");
+          }
+        });
+      });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./dist/js/app.js"></script>
+  </body>
 </html>
