@@ -8,10 +8,11 @@
   },
   "author": "Mohamad Faruk",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "sass": "^1.79.3"
+  },
   "devDependencies": {
     "dart-sass": "^1.25.0",
-    "node-sass": "^4.11.0",
     "node-sass-install": "^1.0.2"
   }
 }
