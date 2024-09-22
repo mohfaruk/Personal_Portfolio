@@ -40,12 +40,25 @@
       <nav class="navbar">
         <div class="navbar-container container">
           <ul class="menu-items">
-            <li><a href="#about">About</a></li>
-            <li><a href="#my-works">Projects</a></li>
-            <li><a href="#contact-me">Contact</a></li>
+            <li><a href="#about-section">About</a></li>
+            <li><a href="#projects-section">Projects</a></li>
           </ul>
         </div>
       </nav>
+      <div class="side-navbar navbar-links">
+        <a class="web-link" href=""
+          ><i class="fa fa-home fa-2x" aria-hidden="true"></i
+        ></a>
+        <a class="web-link" href="#about-section"
+          ><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i
+        ></a>
+        <a class="web-link" href="#projects-section"
+          ><i class="fa fa-file-code-o fa-2x" aria-hidden="true"></i
+        ></a>
+        <a class="web-link" href="#footer-section"
+          ><i class="fa fa-address-book fa-2x" aria-hidden="true"></i
+        ></a>
+      </div>
       <div class="home-content" id="home-page">
         <div class="home-title">
           <h1>Hello, I'm Mohamad</h1>
@@ -56,23 +69,26 @@
               target="_blank"
               href="https://www.linkedin.com/in/mohamad-faruk-9b9523229/"
             >
-              <i class="fab fa-linkedin fa-2x"></i>
+              <i class="fab fa-linkedin fa-2x horizontal-shake"></i>
             </a>
             <a class="web-link" target="_blank" href="">
-              <i class="fas fa-envelope fa-2x"></i
+              <i class="fas fa-envelope fa-2x horizontal-shake"></i
             ></a>
             <a
               class="web-link"
               target="_blank"
               href="https://github.com/mohfaruk"
             >
-              <i class="fab fa-github fa-2x"></i
+              <i class="fab fa-github fa-2x horizontal-shake"></i
             ></a>
           </div>
         </div>
-        <div class="angle-down-icon">
-          <a href="#about-section"><i class="fas fa-angle-down"></i></a>
+        <div class="down-arrow">
+          <a class="down-arrow-icon" href="#about-section"></a>
         </div>
+        <!-- <div class="angle-down-icon">
+          <a href="#about-section"><i class="fas fa-angle-down"></i></a>
+        </div> -->
       </div>
     </header>
 
@@ -80,23 +96,21 @@
     <section id="about-section" class="section-container">
       <div class="container">
         <div class="about-info">
-          <div class="about-bio">
-            <h2 class="section-title">About Me</h2>
-            <p class="text-left">
-              I am a Front-End Software Engineer with a passion for creating
-              high quality UX that is accessible and meaningful to the end user.
-              I strive to build scalable, maintainable apps that make a
-              difference to people's lives. I place importance on working within
-              environments that encourage continuous learning and collaboration.
-            </p>
-            <button
-              href="./dist/img/items/Mohamad Faruk CV.pdf"
-              target="_blank"
-              class="btn about-btn"
-            >
-              View CV
-            </button>
-          </div>
+          <h2 class="section-title">About Me</h2>
+          <p class="text-left">
+            I am a Front-End Software Engineer with a passion for creating high
+            quality UX that is accessible and meaningful to the end user. I
+            strive to build scalable, maintainable apps that make a difference
+            to people's lives. I place importance on working within environments
+            that encourage continuous learning and collaboration.
+          </p>
+          <button
+            href="./dist/img/items/Mohamad Faruk CV.pdf"
+            target="_blank"
+            class="btn about-btn"
+          >
+            View CV
+          </button>
         </div>
       </div>
       <!-- Skills Section -->
@@ -107,7 +121,9 @@
           <i class="fab fa-brands fa-css3 fa-3x"><span>css</span> </i>
           <i class="fab fa-brands fa-js fa-3x"><span>javascript</span></i>
           <i class="fab fa-brands fa-react fa-3x"><span>react</span></i>
+          <i class="fab fa-brands fa-php fa-3x"><span>php</span></i>
           <i class="fab fa-brands fa-sass fa-3x"><span>sass</span></i>
+          <i class="fab fa-brands fa-bootstrap fa-3x"><span>bootstrap</span></i>
           <i class="fab fa-brands fa-npm fa-3x"><span>npm</span></i>
           <i class="fab fa-brands fa-github fa-3x"><span>git/github</span></i>
         </div>
@@ -118,7 +134,7 @@
     <section id="projects-section" class="section-container">
       <div class="container">
         <h2 class="section-title">My Work</h2>
-        <p>Check out my projects below</p>
+        <h3>Check out my projects below</h3>
         <div class="projects">
           <!-- Project 1 -->
           <div class="item">
@@ -126,7 +142,7 @@
               <img src="./dist/img/items/item1.png" alt="" />
             </div>
             <div class="item-description">
-              <h3>Movie Watchlist App</h3>
+              <h3 class="project-title">Movie Watchlist App</h3>
               <p class="text-left">
                 A React application that fetches data from a movie database API.
                 It dynamically renders information on most movies and tv series.
@@ -159,7 +175,7 @@
               <img src="./dist/img/items/item4.png" alt="" />
             </div>
             <div class="item-description">
-              <h3>Note Keeper</h3>
+              <h3 class="project-title">Note Keeper</h3>
               <p class="text-left">
                 A simple React CRUD application which allows users to create and
                 store notes for display. As is the case with CRUD apps, they are
